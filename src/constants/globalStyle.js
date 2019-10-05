@@ -11,6 +11,7 @@ const Style = createGlobalStyle`
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    background-color: ${({ theme }) => theme.background};
   }
   h1,h2,h3,h4,h5,h6,p,a,button,label,input{
     margin: 0;
@@ -18,6 +19,7 @@ const Style = createGlobalStyle`
     outline: 0;
     border: 0;
     transition: 0.4s color;
+    color: ${({ theme }) => theme.text};
   }
   a{
     text-decoration: none;
