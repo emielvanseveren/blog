@@ -9,11 +9,11 @@ const Container = styled.div`
   justify-content: space-between;
   padding: 50px 25px;
   margin: 0 auto;
-  width: 1200px;
+  width: 800px;
   height: 150px;
 `
 const Link = styled(RouterLink)`
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: ${({ theme }) => theme.title};
 `

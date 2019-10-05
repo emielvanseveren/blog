@@ -2,7 +2,7 @@
 
 const lightTheme = {
   background: '#FFFFFF',
-  title:      '#634791',
+  title:      '#B447CC',
   text:       '#000000'
 }
 const darkTheme = {
