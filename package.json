@@ -3,7 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --env production",
+    "cosmos": "cosmos",
+    "cosmos:export": "cosmos-export",
+    "lint": "eslint src/**/*.js",
+    "lint:css": "stylelint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix",
+    "sort-package-json": "sort-package-json package.json",
+    "start": "webpack-dev-server --env development",
+    "test": "jest --config ./jest.config.js",
+    "test:watch": "jest --config ./jest.config.js --watchAll"
   },
   "main": "index.js",
   "dependencies": {
