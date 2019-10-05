@@ -1,9 +1,33 @@
 module.exports = {
-  extends: ['eslint:recommended', 'react-app'],
+  extends: ['eslint:recommended', 'plugin:react/recommended'],
   plugins: [
     'react-hooks',
     'react'
   ],
+  settings: {
+    react: {
+      version: "detect"
+    }
+  },
+  globals: {
+    '__API__':         'readonly',
+    'mountWithRouter': 'readonly',
+    'mount':           'readonly'
+  },
+  env: {
+    'browser': true,
+    'node': true,
+    "jest": true,
+    "es6": true
+  },
+  parserOptions: {
+    "ecmaVersion": 11,
+            "sourceType": "module",
+            "ecmaFeatures": {
+                "jsx": true,
+                "modules": true
+            }
+  },
   rules:   {
     'arrow-body-style':            ['error', 'as-needed'],
     'arrow-spacing':               2,
@@ -65,6 +89,7 @@ module.exports = {
     'react/sort-comp':                    [1, {
       'order': ['lifecycle', 'render', 'static-methods', 'everything-else']
     }],
-    'react/sort-prop-types':              [2, { 'ignoreCase': true }]
+    'react/sort-prop-types':              [2, { 'ignoreCase': true }],
+    'react/display-name':                 0
   }
 }
