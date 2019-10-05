@@ -9,6 +9,7 @@ const Container = styled.aside`
   padding-left: 25px;
   display: flex;
   align-items: top;
+  margin-bottom: 125px;
 `
 const CircleImg = styled.img`
   display: inline-block;

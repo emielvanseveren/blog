@@ -1,6 +1,6 @@
 // shared colors
 
-const purple = '#7F3E99'
+const purple = '#7CD8BF'
 const white = '#FFFFFF'
 
 const lightTheme = {

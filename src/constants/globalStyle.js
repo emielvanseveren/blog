@@ -13,7 +13,7 @@ const Style = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     background-color: ${({ theme }) => theme.background};
   }
-  h1,h2,h3,h4,h5,h6,p,a,button,label,input{
+  h1,h2,h3,h4,h5,h6,p,a,button,label,input,div{
     margin: 0;
     padding: 0;
     outline: 0;
