@@ -1,6 +1,11 @@
-export const theme = {
+// shared colors
+
+const lightTheme = {
   background: '#FFFFFF'
 }
-export const darkTheme = {
+const darkTheme = {
   background: '#282C35'
 }
+
+const theme = mode => (mode === 'dark' ? darkTheme : lightTheme)
+export default theme
