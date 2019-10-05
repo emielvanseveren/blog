@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import ThemeToggle from '../../components/logic/ThemeToggle'
+import Header from '../layout/Header'
 
 const Background = styled.div`
   width: 100%;
@@ -12,7 +12,7 @@ const Background = styled.div`
 export default function Home(){
   return (
     <Background>
-      <ThemeToggle/>
+      <Header/>
     </Background>
   )
 }

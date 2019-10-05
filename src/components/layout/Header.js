@@ -6,18 +6,20 @@ import ThemeToggle from '../logic/ThemeToggle'
 const Container = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-`
-
-const Link = styled(RouterLink)`
-  justify-content: center;
+  justify-content: space-between;
+  padding: 50px 25px;
+  margin: 0 auto;
   width: 1200px;
-
+`
+const Link = styled(RouterLink)`
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: ${({ theme }) => theme.title};
 `
 export default function Header(){
   return (
     <Container>
-      <Link to="/">BlogBlog</Link>
+      <Link to="/">Maggie de blog</Link>
       <ThemeToggle/>
     </Container>
   )
