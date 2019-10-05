@@ -4,7 +4,7 @@ import Link from './Link'
 
 import me from '../../images/me.jpg'
 
-const Container = styled.div`
+const Container = styled.aside`
   width: 100%;
   padding-left: 25px;
   display: flex;
