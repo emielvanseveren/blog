@@ -20,7 +20,7 @@ const Slider = styled.span`
   right: 0;
   bottom: 0;
   border-radius: 20px;
-  background-color: ${({ dark, theme }) => dark ? '#001A26' : theme.purple};
+  background-color: ${({ dark, theme }) => dark ? '#001A26' : theme.highlight};
   transition: .4s;
   &:before{
     position: absolute;

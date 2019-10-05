@@ -4,13 +4,13 @@ import PropTypes from 'prop-types'
 import { Link as RouterLink } from 'react-router-dom'
 
 const InternalLink = styled(RouterLink)`
-  color: ${({ theme }) => theme.purple};
+  color: ${({ theme }) => theme.highlight};
   font-size: 110%;
 `
 const ExternalLink = styled.a`
   text-decoration-line: underline;
-  text-decoration-color: ${({ theme }) => theme.purple};
-  color: ${({ theme }) => theme.purple};
+  text-decoration-color: ${({ theme }) => theme.hightlight};
+  color: ${({ theme }) => theme.highlight};
   font-size: 110%;
 `
 

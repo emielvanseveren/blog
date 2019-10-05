@@ -13,7 +13,7 @@ const Container = styled.div`
 
 const StyledLink = styled(Link)`
   font-size: 1.8rem;
-  color: ${({ theme }) => theme.purple};
+  color: ${({ theme }) => theme.highlight};
   font-weight: 700;
 `
 const Info = styled.div`
@@ -21,10 +21,10 @@ const Info = styled.div`
   font-size: 0.7rem;
 `
 
-export default function ArticleTitle({ date, readTime, title, to, index }){
+export default function ArticleTitle({ date, readTime, title, index }){
   return (
     <Container>
-      <StyledLink to={{ pathname: to, state: { articleNumber: index } }}>{title}</StyledLink>
+      <StyledLink to={{ pathname: '/' + title.replace(/\s+/g, '-').toLowerCase(), state: { articleNumber: index } }}>{title}</StyledLink>
       <Info>{date} • {readTime}</Info>
     </Container>
   )
