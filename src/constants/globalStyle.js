@@ -4,7 +4,7 @@ import { createGlobalStyle } from 'styled-components'
 
 const Style = createGlobalStyle`
   *::selection{
-    background-color: ${(props) => props.theme.red};
+    background-color: black;
     color: white;
   }
   body{
@@ -17,6 +17,7 @@ const Style = createGlobalStyle`
     padding: 0;
     outline: 0;
     border: 0;
+    transition: 0.4s color;
   }
   a{
     text-decoration: none;
@@ -24,7 +25,6 @@ const Style = createGlobalStyle`
   }
   p{
     font-size: 1rem;
-    color: #707070;
   }
   input{
      display: block;

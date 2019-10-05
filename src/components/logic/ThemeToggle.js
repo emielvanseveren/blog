@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { useTheme } from '../../hooks/themeContext'
 
@@ -20,7 +20,7 @@ const Slider = styled.span`
   right: 0;
   bottom: 0;
   border-radius: 20px;
-  background-color: #001a26;
+  background-color: ${({ dark }) => dark ? '#001A26' : '#B447CC'};
   transition: .4s;
   &:before{
     position: absolute;
@@ -28,6 +28,7 @@ const Slider = styled.span`
     height: 18px;
     width: 18px;
     border-radius: 50%;
+    top: 3px;
     left: 4px;
     bottom: 4px;
     background-color: white;
@@ -39,17 +40,17 @@ const Slider = styled.span`
 
 const Sun = styled.img`
  position: absolute;
- left: 4px;
- top: 5px;
- width: 15px;
- z-index: 1;
-`
-const Moon = styled.img`
-  position: absolute;
   right: 4px;
   width: 15px;
   top: 5px;
   z-index: 1;
+`
+const Moon = styled.img`
+ position: absolute;
+ left: 4px;
+ top: 5px;
+ width: 15px;
+ z-index: 1;
 `
 
 export default function ThemeToggle(){
