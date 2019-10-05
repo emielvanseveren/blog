@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { useTheme } from '../../hooks/themeContext'
 
@@ -39,17 +39,17 @@ const Slider = styled.span`
 
 const Sun = styled.img`
  position: absolute;
- left: 4px;
- top: 5px;
- width: 15px;
- z-index: 1;
-`
-const Moon = styled.img`
-  position: absolute;
   right: 4px;
   width: 15px;
   top: 5px;
   z-index: 1;
+`
+const Moon = styled.img`
+ position: absolute;
+ left: 4px;
+ top: 5px;
+ width: 15px;
+ z-index: 1;
 `
 
 export default function ThemeToggle(){

@@ -10,6 +10,7 @@ const Container = styled.div`
   padding: 50px 25px;
   margin: 0 auto;
   width: 1200px;
+  height: 150px;
 `
 const Link = styled(RouterLink)`
   font-size: 2.5rem;
