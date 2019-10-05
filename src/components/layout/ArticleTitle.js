@@ -21,16 +21,17 @@ const Info = styled.div`
   font-size: 0.7rem;
 `
 
-export default function ArticleTitle({ date, readTime, title, to }){
+export default function ArticleTitle({ date, readTime, title, to, index }){
   return (
     <Container>
-      <StyledLink to={to}>{title}</StyledLink>
+      <StyledLink to={{ pathname: to, state: { articleNumber: index } }}>{title}</StyledLink>
       <Info>{date} • {readTime}</Info>
     </Container>
   )
 }
 ArticleTitle.propTypes = {
   date:     PropTypes.string.isRequired,
+  index:    PropTypes.number.isRequired,
   readTime: PropTypes.string.isRequired,
   title:    PropTypes.string.isRequired,
   to:       PropTypes.string.isRequired

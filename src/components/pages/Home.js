@@ -5,20 +5,19 @@ import Header from '../layout/Header'
 import Intro from '../layout/Intro'
 import ArticleTitle from '../layout/ArticleTitle'
 
-const Background = styled.div`
+const Container = styled.div`
   width: 800px;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
-  transition: 0.3s background-color ease-in-out;
 `
 
 export default function Home(){
   return (
-    <Background>
+    <Container>
       <Header/>
       <Intro/>
-      <ArticleTitle date="4 aug 2019" readTime="about 10 minutes" title="This is a pretty short title" to="/to-a-pretty-short-title"/>
-      <ArticleTitle date="4 aug 2019" readTime="about 10 minutes" title="This is a pretty short title" to="/to-a-pretty-short-title"/>
-    </Background>
+      <ArticleTitle date="4 aug 2019" index={5} readTime="about 10 minutes" title="This is a pretty short title" to="/article/thisisthetitle"/>
+      <ArticleTitle date="4 aug 2019" index={6} readTime="about 10 minutes" title="This is a pretty short title" to="/article/thisisanothertitle"/>
+    </Container>
   )
 }
