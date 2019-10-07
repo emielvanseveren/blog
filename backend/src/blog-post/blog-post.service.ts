@@ -1,4 +1,4 @@
-import { inJectable, Logger, Injectable, NotFoundException } from '@nestjs/common'
+import { Injectable, Logger, NotFoundException } from '@nestjs/common'
 import { BlogPostRepository } from './blog-post.repository'
 import { InjectRepository } from '@nestjs/typeorm'
 import BlogPost from './blog-post.entity'
