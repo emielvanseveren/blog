@@ -1,6 +1,6 @@
 // main pages
 import Home from '../components/pages/Home'
-import Post from '../components/pages/Post'
+import PostPage from '../components/pages/PostPage'
 import NotFound from '../components/pages/NotFound'
 
 const routes = [
@@ -11,7 +11,7 @@ const routes = [
   },
   {
     path:      '/:title',
-    component: Post
+    component: PostPage
   },
   {
     component: NotFound

@@ -12,7 +12,7 @@ const lightTheme = {
 }
 const darkTheme = {
   highlight:     highlight,
-  background: '#282C35',
+  background: '#282c35',
   title:      white,
   text:       white
 }
