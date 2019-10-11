@@ -19,9 +19,14 @@ const StyledLink = styled(Link)`
 const Info = styled.div`
   display: block;
   font-size: 0.7rem;
+  margin-bottom: 5px;
+`
+const Description = styled.p`
+  display: block;
+  font-size: 0.9rem;
 `
 
-export default function Title({ date, read, title, postId }){
+export default function Title({ date, description, read, title, postId }){
   function parseDate(date){
     const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'October', 'November', 'December']
     return `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`
@@ -40,12 +45,14 @@ export default function Title({ date, read, title, postId }){
     <Container>
       <StyledLink to={{ pathname: '/' + title.replace(/\s+/g, '-').toLowerCase(), state: { postId } }}>{title}</StyledLink>
       <Info>{parseDate(date)} • {read} min read {readLengthEmoji(read)}</Info>
+      <Description>{description}</Description>
     </Container>
   )
 }
 Title.propTypes = {
-  date:     PropTypes.instanceOf(Date),
-  postId:   PropTypes.number.isRequired,
-  read:     PropTypes.number.isRequired,
-  title:    PropTypes.string.isRequired
+  date:         PropTypes.instanceOf(Date),
+  description:  PropTypes.string.isRequired,
+  postId:       PropTypes.number.isRequired,
+  read:         PropTypes.number.isRequired,
+  title:        PropTypes.string.isRequired
 }

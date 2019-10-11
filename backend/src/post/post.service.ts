@@ -5,7 +5,7 @@ import Post from './post.entity'
 
 @Injectable()
 export class PostService {
-  private logger = new Logger('BlogPostService')
+  private logger = new Logger('PostService')
 
   constructor(
     @InjectRepository(PostRepository)

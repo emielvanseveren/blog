@@ -13,7 +13,7 @@ export class PostRepository extends Repository<Post> {
 
   async getTitles() : Promise<Post[]> {
     const titles = await this.find({
-      select: [ 'postId', 'title', 'date', 'read'],
+      select: [ 'postId', 'title', 'description', 'date', 'read'],
       take: 50
     })
     return titles
