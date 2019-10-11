@@ -11,14 +11,16 @@ const Container = styled.div`
   margin: 0 auto;
 `
 
-export default function(){
+export default function Post({ match }){
+  console.log(match)
   // hierop fetchen api.massief.biz:port
   console.log(history.location.state.articleNumber)
   return (
     <Container>
       <Header/>
-      <Title center text="this is the title" date="6 oct 2019" readTime="8min"/>
-      <Body/>
+      <Body>
+        something here
+      </Body>
     </Container>
   )
 }

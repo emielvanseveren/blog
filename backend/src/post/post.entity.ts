@@ -2,10 +2,10 @@ import { Entity, Column, BaseEntity, Unique, PrimaryGeneratedColumn } from 'type
 
 
 @Entity()
-@Unique(['id'])
-export default class BlogPost extends BaseEntity {
+@Unique(['postId'])
+export default class Post extends BaseEntity {
   @PrimaryGeneratedColumn()
-  id: number
+  postId: number
 
   @Column()
   title: string
@@ -14,5 +14,8 @@ export default class BlogPost extends BaseEntity {
   date: Date
 
   @Column()
-  readTime: string
+  read: number
+
+  @Column()
+  body: string
 }

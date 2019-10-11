@@ -21,18 +21,31 @@ const Info = styled.div`
   font-size: 0.7rem;
 `
 
-export default function Title({ date, readTime, title, index }){
+export default function Title({ date, read, title, postId }){
+  function parseDate(date){
+    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'October', 'November', 'December']
+    return `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`
+  }
+  function readLengthEmoji(read){
+    switch (read){
+      case 1,2,3:
+        return '🔥'
+      case 4,5,6:
+        return '🔥🔥'
+      case read > 6:
+        return '🔥🔥🔥'
+    }
+  }
   return (
     <Container>
-      <StyledLink to={{ pathname: '/' + title.replace(/\s+/g, '-').toLowerCase(), state: { articleNumber: index } }}>{title}</StyledLink>
-      <Info>{date} • {readTime}</Info>
+      <StyledLink to={{ pathname: '/' + title.replace(/\s+/g, '-').toLowerCase(), state: { postId } }}>{title}</StyledLink>
+      <Info>{parseDate(date)} • {read} min read {readLengthEmoji(read)}</Info>
     </Container>
   )
 }
 Title.propTypes = {
-  date:     PropTypes.string.isRequired,
-  index:    PropTypes.number.isRequired,
-  readTime: PropTypes.string.isRequired,
-  title:    PropTypes.string.isRequired,
-  to:       PropTypes.string.isRequired
+  date:     PropTypes.instanceOf(Date),
+  postId:   PropTypes.number.isRequired,
+  read:     PropTypes.number.isRequired,
+  title:    PropTypes.string.isRequired
 }

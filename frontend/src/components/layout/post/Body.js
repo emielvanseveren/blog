@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { darken } from 'polished'
 
@@ -7,12 +8,17 @@ const Container = styled.div`
   padding: 50px;
   background-color: ${({ theme }) => darken(0.05, theme.background)};
   border-radius: 25px;
+  color: ${({ theme }) => theme.text};
 `
 
-export default function Body(){
+export default function Body({ children }){
   return (
     <Container>
-      this is the body but this will be very very very long when the time is there.
+      { children }
     </Container>
   )
+}
+
+Body.propTypes = {
+  children: PropTypes.node.isRequired
 }

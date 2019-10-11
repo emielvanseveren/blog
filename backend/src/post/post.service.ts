@@ -1,25 +1,25 @@
 import { Injectable, Logger, NotFoundException } from '@nestjs/common'
-import { BlogPostRepository } from './blog-post.repository'
+import { PostRepository } from './post.repository'
 import { InjectRepository } from '@nestjs/typeorm'
-import BlogPost from './blog-post.entity'
+import Post from './post.entity'
 
 @Injectable()
-export class BlogPostService {
+export class PostService {
   private logger = new Logger('BlogPostService')
 
   constructor(
-    @InjectRepository(BlogPostRepository)
-    private BlogPostRepository: BlogPostRepository) {}
+    @InjectRepository(PostRepository)
+    private PostRepository: PostRepository) {}
 
-    async getBlogPost( id: number): Promise<BlogPost>{
-      const found = await this.BlogPostRepository.getBlogPost(id)
+    async getBlogPost( id: number): Promise<Post>{
+      const found = await this.PostRepository.getBlogPost(id)
       if(!found) {
         throw new NotFoundException(`Blog post with ID "${id}" not found.`)
       }
       return found
     }
-    async getTitles(): Promise<BlogPost[]>{
-      const found = await this.BlogPostRepository.getTitles()
+    async getTitles(): Promise<Post[]>{
+      const found = await this.PostRepository.getTitles()
         if(!found){
           throw new NotFoundException(`There were no titles found at all.`)
         }
