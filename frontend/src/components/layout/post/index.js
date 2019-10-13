@@ -3,21 +3,18 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import Title from './Title'
 import Body from './Body'
-import Footer from '../Footer'
 
 const Container = styled.div`
   position: relative;
   width: 800px;
-  min-height: 100vh;
-  margin: 0 auto;
+  margin: 0 auto 100px auto;
 `
 
-export default function Post({ body, date, read, title }){
+export default function Post({ body, date, read, title, postId }){
   return (
     <Container>
       <Title date={new Date(date)} read={read} text={title}/>
       <Body text={body}/>
-      <Footer/>
     </Container>
   )
 }

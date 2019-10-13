@@ -23,5 +23,5 @@ export default function Link({ children, to, internal = true }){
 Link.propTypes = {
   children: PropTypes.node.isRequired,
   internal: PropTypes.bool,
-  to:       PropTypes.string.isRequired
+  to:       PropTypes.oneOfType([ PropTypes.object, PropTypes.string]).isRequired
 }

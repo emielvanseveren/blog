@@ -21,7 +21,6 @@ export default function PostPage(){
   async function fetchData(){
     const res = await fetch(`${__API__}/post/${history.location.state.postId}`, { method: 'GET' })
     const data = await res.json()
-    console.log(data)
     setPostData({ ...data, loading: false })
   }
   function loadPost(){
@@ -35,7 +34,6 @@ export default function PostPage(){
       <Header/>
       {
         postData.loading ? <Loader/> : loadPost()
-
       }
     </Container>
   )
