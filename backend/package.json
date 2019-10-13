@@ -1,10 +1,10 @@
 {
   "name": "blog-backend",
-  "license": "MIT",
   "scripts": {
     "start": "ts-node -r tsconfig-paths/register src/main.ts",
     "start:dev": "tsc-watch -p tsconfig.build.json --onSuccess \"node dist/main.js\"",
-    "lint": "tslint -p tsconfig.json -c tslint.json"
+    "lint": "tslint -p tsconfig.json -c tslint.json",
+    "build": "rimraf dist && tsc -p tsconfig.build.json"
   },
   "author": "Emiel Van Severen",
   "dependencies": {
@@ -16,6 +16,7 @@
     "dotenv": "^8.1.0",
     "mysql": "^2.17.1",
     "pg": "^7.12.1",
+    "rimraf": "^3.0.0",
     "rxjs": "^6.5.3",
     "typeorm": "^0.2.19"
   },
@@ -31,5 +32,6 @@
     "tsconfig-paths": "^3.9.0",
     "tslint": "^5.20.0",
     "typescript": "^3.6.3"
-  }
+  },
+  "license": "MIT"
 }
