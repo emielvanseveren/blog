@@ -1,0 +1,51 @@
+name: Frontend CI
+
+on:
+  push:
+    paths:
+      - 'frontend/*'
+      - 'frontend/*/*'
+      - 'frontend/*/*/*'
+      - 'frontend/*/*/*/*'
+      - 'frontend/*/*/*/*/*'
+      - 'frontend/*/*/*/*/*/*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: yarn install
+      run: |
+        cd frontend
+        yarn
+    - name: yarn build
+      run: |
+        cd frontend
+        yarn build
+    - name: yarn test
+      run: |
+        cd frontend
+        yarn test
+    - name: yarn lint
+      run: |
+        cd frontend
+        yarn lint
+    - name: yarn audit
+      run: |
+        cd frontend
+        yarn audit
+    - name: Upload artifact
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        name: Webpack build
+        path: frontend/dist
+      env:
+        CI: true

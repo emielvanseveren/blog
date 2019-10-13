@@ -1,0 +1,46 @@
+name: Backend CI
+
+on:
+  push:
+    paths:
+      - 'backend/*'
+      - 'backend/*/*'
+      - 'backend/*/*/*'
+      - 'backend/*/*/*/*'
+      - 'backend/*/*/*/*/*'
+      - 'backend/*/*/*/*/*/*'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: yarn install
+      run: |
+        cd backend
+        yarn
+    - name: yarn build
+      run: |
+        cd backend
+        yarn build
+    - name: yarn test
+      run: |
+        cd backend
+        yarn test --coverage
+    - name: yarn lint
+      run: |
+        cd backend
+        yarn lint
+    - name: Upload artifact
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        name: Compiled TS
+        path: backend/dist
+      env:
+        CI: true
