@@ -10,9 +10,7 @@
     "lint:css": "stylelint src/**/*.js",
     "lint:fix": "eslint src/**/*.js --fix",
     "sort-package-json": "sort-package-json package.json",
-    "start": "webpack-dev-server --env development",
-    "test": "jest --config ./jest.config.js",
-    "test:watch": "jest --config ./jest.config.js --watchAll"
+    "start": "webpack-dev-server --env development"
   },
   "main": "index.js",
   "dependencies": {

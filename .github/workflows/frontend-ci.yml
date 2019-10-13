@@ -34,10 +34,6 @@ jobs:
       run: |
         cd frontend
         yarn test
-    - name: yarn lint
-      run: |
-        cd frontend
-        yarn lint
     - name: yarn audit
       run: |
         cd frontend

@@ -29,10 +29,10 @@ jobs:
       run: |
         cd backend
         yarn build
-    - name: yarn test
+    - name: yarn audit
       run: |
         cd backend
-        yarn test --coverage
+        yarn audit
     - name: yarn lint
       run: |
         cd backend
