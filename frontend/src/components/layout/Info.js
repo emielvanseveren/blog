@@ -15,9 +15,9 @@ export default function Info({ date, read }){
   }
   function readLengthEmoji(read){
     switch (read){
-      case 1,2,3:
+      case 1: case 2: case 3:
         return '🔥'
-      case 4,5,6:
+      case 4: case 5: case 6:
         return '🔥🔥'
       case read > 6:
         return '🔥🔥🔥'

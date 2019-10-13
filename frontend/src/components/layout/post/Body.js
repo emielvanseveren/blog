@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import Link from '../Link'
 
 const Container = styled.div`
   width: 800px;
@@ -13,7 +14,7 @@ const Container = styled.div`
   strong {
     font-weight: 600;
     margin-left: 2px;
-    font-size: 110%;
+    font-size: 105%;
     margin-right: 2px;
     color: ${({ theme }) => theme.highlight};
   }
