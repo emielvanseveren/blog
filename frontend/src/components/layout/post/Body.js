@@ -7,9 +7,15 @@ const Container = styled.div`
   width: 800px;
   border-radius: 10px;
   color: ${({ theme }) => theme.text};
-
   div {
     margin-bottom: 20px;
+  }
+  .block{
+    margin-top: 10px;
+    margin-bottom: 35px;
+  }
+  h2{
+    margin-bottom: 5px;
   }
   strong {
     font-weight: 600;
