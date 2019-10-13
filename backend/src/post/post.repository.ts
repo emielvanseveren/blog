@@ -11,11 +11,21 @@ export class PostRepository extends Repository<Post> {
     return Post
   }
 
+  async getTitle(id: number) : Promise<Post>{
+    const title = await this.findOne({
+      select: ['title'],
+      where: { postId: id }
+    })
+    return title
+  }
+
   async getTitles() : Promise<Post[]> {
     const titles = await this.find({
       select: [ 'postId', 'title', 'description', 'date', 'read'],
-      take: 50
+      take: 50,
+      order: { date: 'DESC'}
     })
     return titles
   }
+
 }

@@ -18,6 +18,15 @@ export class PostService {
       }
       return found
     }
+
+    async getTitle(id: number): Promise<Post>{
+      const found = await this.PostRepository.getTitle(id)
+      if(!found){
+        throw new NotFoundException('There was no title found for given id.')
+      }
+      return found
+    }
+
     async getTitles(): Promise<Post[]>{
       const found = await this.PostRepository.getTitles()
         if(!found){

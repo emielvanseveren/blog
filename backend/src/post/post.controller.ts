@@ -10,6 +10,10 @@ export class PostController{
   getTitles(): Promise<Post[]>{
     return this.PostService.getTitles()
   }
+  @Get('/:id/title')
+  getTitle(@Param('id', ParseIntPipe) id: number): Promise<Post>{
+    return this.PostService.getTitle(id)
+  }
 
   @Get('/:id')
   getBlogPost(@Param('id', ParseIntPipe) id: number): Promise<Post>{
