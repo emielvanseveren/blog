@@ -1,17 +1,18 @@
 // shared colors
 
-const highlight = '#7CD8BF'
+const highlight = '#f1cbff'
+const highlightLightTheme = '#c0a2cc'
 const white = '#FFFFFF'
 
 const lightTheme = {
-  highlight:       highlight,
+  highlight:       highlightLightTheme,
   background: white,
-  title:      highlight,
+  title:      highlightLightTheme,
   text:       '#000000'
 }
 const darkTheme = {
   highlight:     highlight,
-  background: '#282C35',
+  background: '#282c35',
   title:      white,
   text:       white
 }

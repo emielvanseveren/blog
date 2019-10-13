@@ -1,18 +1,36 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { darken } from 'polished'
 
 const Container = styled.div`
   width: 800px;
-  padding: 50px;
-  background-color: ${({ theme }) => darken(0.05, theme.background)};
-  border-radius: 25px;
+  border-radius: 10px;
+  color: ${({ theme }) => theme.text};
+
+  div {
+    margin-bottom: 20px;
+  }
+  strong {
+    font-weight: 600;
+    margin-left: 2px;
+    font-size: 110%;
+    margin-right: 2px;
+    color: ${({ theme }) => theme.highlight};
+  }
+  a {
+    text-decoration: underline;
+    text-decoration-color: ${({ theme }) => theme.highlight};
+    color: ${({ theme }) => theme.highlight};
+    font-size: 110%;
+  }
 `
 
-export default function Body(){
+export default function Body({ text }){
   return (
-    <Container>
-      this is the body but this will be very very very long when the time is there.
-    </Container>
+    <Container dangerouslySetInnerHTML={{ __html: text }}/>
   )
+}
+
+Body.propTypes = {
+  text: PropTypes.string.isRequired
 }

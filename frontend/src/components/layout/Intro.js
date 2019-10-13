@@ -8,7 +8,7 @@ const Container = styled.aside`
   width: 100%;
   padding-left: 25px;
   display: flex;
-  align-items: top;
+  align-items: flex-start;
   margin-bottom: 125px;
 `
 const CircleImg = styled.img`

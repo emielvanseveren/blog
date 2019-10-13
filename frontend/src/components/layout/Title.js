@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import Info from './Info'
 
 const Container = styled.div`
   margin: 75px 0;
@@ -16,23 +17,24 @@ const StyledLink = styled(Link)`
   color: ${({ theme }) => theme.highlight};
   font-weight: 700;
 `
-const Info = styled.div`
+const Description = styled.p`
   display: block;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 `
 
-export default function Title({ date, readTime, title, index }){
+export default function Title({ date, description, read, title, postId }){
   return (
     <Container>
-      <StyledLink to={{ pathname: '/' + title.replace(/\s+/g, '-').toLowerCase(), state: { articleNumber: index } }}>{title}</StyledLink>
-      <Info>{date} • {readTime}</Info>
+      <StyledLink to={{ pathname: '/' + title.replace(/\s+/g, '-').toLowerCase(), state: { postId: postId } }}>{title}</StyledLink>
+      <Info date={date} read={read}/>
+      <Description>{description}</Description>
     </Container>
   )
 }
 Title.propTypes = {
-  date:     PropTypes.string.isRequired,
-  index:    PropTypes.number.isRequired,
-  readTime: PropTypes.string.isRequired,
-  title:    PropTypes.string.isRequired,
-  to:       PropTypes.string.isRequired
+  date:         PropTypes.instanceOf(Date),
+  description:  PropTypes.string.isRequired,
+  postId:       PropTypes.number.isRequired,
+  read:         PropTypes.number.isRequired,
+  title:        PropTypes.string.isRequired
 }
