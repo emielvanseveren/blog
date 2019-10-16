@@ -14,7 +14,7 @@ RUN yarn install --frozen-lockfile
 RUN yarn build
 
 WORKDIR /usr/src/app/backend
-RUN yarn install
-RUN yarn build
+RUN yarn install --frozen-lockfile
+RUN yarn dockerbuild
 
 CMD ["node","/backend/dist/main.js"]
