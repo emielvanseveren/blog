@@ -9,7 +9,7 @@ export default class Post extends BaseEntity {
 
   @Column()
   title: string
-  
+
   @Column()
   description: string
 
