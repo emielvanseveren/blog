@@ -52,7 +52,7 @@ exports.globalVariables = () => ({
 exports.generateFavicon = () => ({
   plugins: [
     new FaviconsWebpackPlugin({
-      logo:           './src/images/logo-navbar.png',
+      logo:           './src/images/icon.svg',
       statsFilename:  'faviconStats-[hash].json',
       inject:         true,
       title:          'Banter',
@@ -95,9 +95,13 @@ exports.minify = () => ({
       new TerserPlugin({
         parallel:       4,
         terserOptions:  {
-          ecma:         7,
+          warnings: false,
+          ecma:         8,
           warnings:     true,
-          output:       true,
+          output:       {
+            comments: false
+          },
+          extractComments: false,
           ie8:          false,
           compress:     {},
           mangle:       true
