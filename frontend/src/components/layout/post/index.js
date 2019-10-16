@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import Title from './Title'
-import Body from './Body'
+import MdParser from '../md-parser/MdParser'
 
 const Container = styled.div`
   position: relative;
@@ -14,7 +14,7 @@ export default function Post({ body, date, read, title, postId }){
   return (
     <Container>
       <Title date={new Date(date)} read={read} text={title}/>
-      <Body text={body}/>
+      <MdParser md={body}/>
     </Container>
   )
 }
