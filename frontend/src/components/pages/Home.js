@@ -16,14 +16,12 @@ const Container = styled.div`
 `
 
 export default function Home(){
-  const [titles, setTitles] = useState([{ date: undefined, description: undefined, postId: undefined, read: undefined, title: undefined }])
-  const [ loading, setLoading] = useState(true)
+  const [titles, setTitles] = useState({ data: null, loading: true})
 
   async function fetchData(){
     const res = await fetch(`${__API__}/post/titles`, { method: 'GET' })
     const data = await res.json()
-    setTitles(data)
-    setLoading(false)
+    setTitles({data: data, loading: false })
   }
 
   useEffect(() => {
@@ -31,8 +29,8 @@ export default function Home(){
   }, [])
 
   function showTitles(){
-    if (!loading){
-      return (titles.map(({ date, description, postId, read, title }) => <Title date={new Date(date)} description={description} key={uuid()} postId={postId} read={read} title={title}/>))
+    if (!titles.loading){
+      return (titles.data.map(({ date, description, postId, read, title }) => <Title date={new Date(date)} description={description} key={uuid()} postId={postId} read={read} title={title}/>))
     } else {
       return <Loader/>
     }
