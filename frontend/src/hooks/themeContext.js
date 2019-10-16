@@ -4,7 +4,7 @@ import { ThemeProvider as StyledThemeProvider } from 'styled-components'
 import theme from '../constants/theme'
 
 const defaultContextData = {
-  darkmode:          false,
+  darkmode:          true,
   toggleDarkMode: () => {}
 }
 

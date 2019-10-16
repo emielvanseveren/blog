@@ -55,8 +55,9 @@ exports.generateFavicon = () => ({
       logo:           './src/images/icon.svg',
       statsFilename:  'faviconStats-[hash].json',
       inject:         true,
-      title:          'Banter',
+      title:          'Blog',
       caches:         true,
+      prefix:         '/assets/icons/',
       outputPath:     '/assets/icons/'
     })
   ]
@@ -65,7 +66,7 @@ exports.generateFavicon = () => ({
 exports.cleanDist = () => ({
   plugins: [
     new CleanWebpackPlugin({
-      dry:     true,
+      dry:     false, // this simulates the removal off files so you don't remove files outside the dist
       verbose: false
     })
   ]
