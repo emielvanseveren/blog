@@ -11,13 +11,10 @@ WORKDIR /usr/src/app/frontend
 # install and cache app dependencies
 RUN yarn install --frozen-lockfile
 # this will create a dist in frontend
-RUN yarn production
+RUN yarn build
 
 WORKDIR /usr/src/app/backend
 RUN yarn install --frozen-lockfile
 RUN yarn build
 
 CMD ["node","/backend/dist/main.js"]
-
-
-
