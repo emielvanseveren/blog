@@ -9,9 +9,10 @@ export default function App(){
     <ThemeProvider>
       <Helmet>
         <meta charSet="utf-8"/>
-        <title>React Addict</title>
+        <title>Maggie de blog</title>
         <link rel="canonical" href="https://blog.emielvanseveren.be"/>
-        <meta name="description" content="Personal Blog - Emiel Van Severen - React Addict"/>
+        <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/railscasts.css" />
+        <meta name="description" content="Personal Blog - Emiel Van Severen - Maggie de blog - React Addict"/>
         <meta name="keywords" content="Blog, Emiel Van Severen, Personal Blog, Programmer"/>
         <meta name="HandHeldFriendly" content="true"/>
         <meta name="theme-color" content="#f1cbff"/>

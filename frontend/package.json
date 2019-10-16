@@ -14,10 +14,13 @@
   },
   "main": "index.js",
   "dependencies": {
+    "markdown-to-jsx": "^6.10.3",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1",
+    "react-markdown": "^4.2.2",
     "react-router-dom": "^5.1.2",
+    "react-syntax-highlighter": "^11.0.2",
     "styled-components": "^4.4.0"
   },
   "devDependencies": {
