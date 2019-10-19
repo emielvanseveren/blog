@@ -11,7 +11,7 @@ module.exports = {
   },
   globals: {
     '__API__':         'readonly',
-    'mountWithRouter': 'readonly',
+    'mountWithRouterAndTheme': 'readonly',
     'mount':           'readonly'
   },
   env: {

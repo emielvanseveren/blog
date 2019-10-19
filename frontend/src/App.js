@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet'
 import Routing from './components/Routing'
 import { ThemeProvider } from './hooks/themeContext'
 import Style from './constants/globalStyle'
+import history from './constants/history'
 
 export default function App(){
   return (
@@ -18,7 +19,7 @@ export default function App(){
         <meta name="theme-color" content="#f1cbff"/>
       </Helmet>
       <Style/>
-      <Routing/>
+      <Routing history={history}/>
     </ThemeProvider>
   )
 }

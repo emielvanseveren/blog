@@ -1,0 +1,928 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App/> Snapshot 1`] = `
+<App>
+  <ThemeProvider>
+    <ThemeProvider
+      theme={
+        Object {
+          "background": "#FFFFFF",
+          "highlight": "#c0a2cc",
+          "text": "#000000",
+          "title": "#c0a2cc",
+        }
+      }
+    >
+      <HelmetWrapper
+        defer={true}
+        encodeSpecialCharacters={true}
+      >
+        <SideEffect(NullComponent)
+          defer={true}
+          encodeSpecialCharacters={true}
+          link={
+            Array [
+              Object {
+                "href": "https://blog.emielvanseveren.be",
+                "rel": "canonical",
+              },
+              Object {
+                "href": "https://highlightjs.org/static/demo/styles/railscasts.css",
+                "rel": "stylesheet",
+              },
+            ]
+          }
+          meta={
+            Array [
+              Object {
+                "charset": "utf-8",
+              },
+              Object {
+                "content": "Personal Blog - Emiel Van Severen - Maggie de blog - React Addict",
+                "name": "description",
+              },
+              Object {
+                "content": "Blog, Emiel Van Severen, Personal Blog, Programmer",
+                "name": "keywords",
+              },
+              Object {
+                "content": "true",
+                "name": "HandHeldFriendly",
+              },
+              Object {
+                "content": "#f1cbff",
+                "name": "theme-color",
+              },
+            ]
+          }
+          title="Maggie de blog"
+          titleAttributes={Object {}}
+        >
+          <NullComponent
+            defer={true}
+            encodeSpecialCharacters={true}
+            link={
+              Array [
+                Object {
+                  "href": "https://blog.emielvanseveren.be",
+                  "rel": "canonical",
+                },
+                Object {
+                  "href": "https://highlightjs.org/static/demo/styles/railscasts.css",
+                  "rel": "stylesheet",
+                },
+              ]
+            }
+            meta={
+              Array [
+                Object {
+                  "charset": "utf-8",
+                },
+                Object {
+                  "content": "Personal Blog - Emiel Van Severen - Maggie de blog - React Addict",
+                  "name": "description",
+                },
+                Object {
+                  "content": "Blog, Emiel Van Severen, Personal Blog, Programmer",
+                  "name": "keywords",
+                },
+                Object {
+                  "content": "true",
+                  "name": "HandHeldFriendly",
+                },
+                Object {
+                  "content": "#f1cbff",
+                  "name": "theme-color",
+                },
+              ]
+            }
+            title="Maggie de blog"
+            titleAttributes={Object {}}
+          />
+        </SideEffect(NullComponent)>
+      </HelmetWrapper>
+      <GlobalStyleComponent />
+      <Routing
+        history={
+          Object {
+            "action": "POP",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 1,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+      >
+        <Router
+          history={
+            Object {
+              "action": "POP",
+              "block": [Function],
+              "createHref": [Function],
+              "go": [Function],
+              "goBack": [Function],
+              "goForward": [Function],
+              "length": 1,
+              "listen": [Function],
+              "location": Object {
+                "hash": "",
+                "pathname": "/",
+                "search": "",
+                "state": undefined,
+              },
+              "push": [Function],
+              "replace": [Function],
+            }
+          }
+        >
+          <Switch>
+            <Route
+              component={[Function]}
+              computedMatch={
+                Object {
+                  "isExact": true,
+                  "params": Object {},
+                  "path": "/",
+                  "url": "/",
+                }
+              }
+              exact={true}
+              key="route-/"
+              location={
+                Object {
+                  "hash": "",
+                  "pathname": "/",
+                  "search": "",
+                  "state": undefined,
+                }
+              }
+              path="/"
+            >
+              <Home
+                history={
+                  Object {
+                    "action": "POP",
+                    "block": [Function],
+                    "createHref": [Function],
+                    "go": [Function],
+                    "goBack": [Function],
+                    "goForward": [Function],
+                    "length": 1,
+                    "listen": [Function],
+                    "location": Object {
+                      "hash": "",
+                      "pathname": "/",
+                      "search": "",
+                      "state": undefined,
+                    },
+                    "push": [Function],
+                    "replace": [Function],
+                  }
+                }
+                location={
+                  Object {
+                    "hash": "",
+                    "pathname": "/",
+                    "search": "",
+                    "state": undefined,
+                  }
+                }
+                match={
+                  Object {
+                    "isExact": true,
+                    "params": Object {},
+                    "path": "/",
+                    "url": "/",
+                  }
+                }
+              >
+                <Home__Container>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "Home__Container-sc-1tpc1uz-0",
+                          "isStatic": false,
+                          "lastClassName": "bIKlCY",
+                          "rules": Array [
+                            "position:relative;width:800px;min-height:100vh;margin:0 auto;@media ",
+                            "(max-width: 768px)",
+                            "{width:500px;}@media ",
+                            "(max-width: 576px)",
+                            "{width:350px;}",
+                          ],
+                        },
+                        "displayName": "Home__Container",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "Home__Container-sc-1tpc1uz-0",
+                        "target": "div",
+                        "toString": [Function],
+                        "usesTheme": false,
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <div
+                      className="Home__Container-sc-1tpc1uz-0 bIKlCY"
+                    >
+                      <Header>
+                        <Header__Container>
+                          <StyledComponent
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "Header__Container-sc-5cz1vh-0",
+                                  "isStatic": false,
+                                  "lastClassName": "wSjrl",
+                                  "rules": Array [
+                                    "display:flex;align-items:center;justify-content:space-between;padding-top:50px;height:150px;@media ",
+                                    "(max-width: 992px)",
+                                    "{width:90%;margin-left:auto;margin-right:auto;}@media ",
+                                    "(max-width: 768px)",
+                                    "{flex-direction:column;justify-content:flex-start;padding:25px 0;height:100px;}",
+                                  ],
+                                },
+                                "displayName": "Header__Container",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "Header__Container-sc-5cz1vh-0",
+                                "target": "div",
+                                "toString": [Function],
+                                "usesTheme": false,
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                          >
+                            <div
+                              className="Header__Container-sc-5cz1vh-0 wSjrl"
+                            >
+                              <Header__Link
+                                to="/"
+                              >
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "Header__Link-sc-5cz1vh-1",
+                                        "isStatic": false,
+                                        "lastClassName": "cjAzqU",
+                                        "rules": Array [
+                                          "font-size:1.8rem;font-weight:700;color:",
+                                          [Function],
+                                          ";@media ",
+                                          "(max-width: 768px)",
+                                          "{font-size:1.8rem;margin-bottom:20px;}",
+                                        ],
+                                      },
+                                      "displayName": "Header__Link",
+                                      "foldedComponentIds": Array [],
+                                      "propTypes": Object {
+                                        "innerRef": [Function],
+                                        "onClick": [Function],
+                                        "replace": [Function],
+                                        "target": [Function],
+                                        "to": [Function],
+                                      },
+                                      "render": [Function],
+                                      "styledComponentId": "Header__Link-sc-5cz1vh-1",
+                                      "target": Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "displayName": "Link",
+                                        "propTypes": Object {
+                                          "innerRef": [Function],
+                                          "onClick": [Function],
+                                          "replace": [Function],
+                                          "target": [Function],
+                                          "to": [Function],
+                                        },
+                                        "render": [Function],
+                                      },
+                                      "toString": [Function],
+                                      "usesTheme": false,
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                  to="/"
+                                >
+                                  <Link
+                                    className="Header__Link-sc-5cz1vh-1 cjAzqU"
+                                    to="/"
+                                  >
+                                    <LinkAnchor
+                                      className="Header__Link-sc-5cz1vh-1 cjAzqU"
+                                      href="/"
+                                      navigate={[Function]}
+                                    >
+                                      <a
+                                        className="Header__Link-sc-5cz1vh-1 cjAzqU"
+                                        href="/"
+                                        onClick={[Function]}
+                                      >
+                                        Maggie de blog
+                                      </a>
+                                    </LinkAnchor>
+                                  </Link>
+                                </StyledComponent>
+                              </Header__Link>
+                              <ThemeToggle>
+                                <ThemeToggle__Switch
+                                  onClick={[Function]}
+                                >
+                                  <StyledComponent
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "ThemeToggle__Switch-sc-1v194oo-0",
+                                          "isStatic": false,
+                                          "lastClassName": "dceAhK",
+                                          "rules": Array [
+                                            "position:relative;width:45px;height:25px;padding:0 2px;cursor:pointer;",
+                                          ],
+                                        },
+                                        "displayName": "ThemeToggle__Switch",
+                                        "foldedComponentIds": Array [],
+                                        "render": [Function],
+                                        "styledComponentId": "ThemeToggle__Switch-sc-1v194oo-0",
+                                        "target": "div",
+                                        "toString": [Function],
+                                        "usesTheme": false,
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                    onClick={[Function]}
+                                  >
+                                    <div
+                                      className="ThemeToggle__Switch-sc-1v194oo-0 dceAhK"
+                                      onClick={[Function]}
+                                    >
+                                      \`
+                                      <ThemeToggle__Sun
+                                        alt="sun"
+                                        src=""
+                                      >
+                                        <StyledComponent
+                                          alt="sun"
+                                          forwardedComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "attrs": Array [],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "ThemeToggle__Sun-sc-1v194oo-2",
+                                                "isStatic": false,
+                                                "lastClassName": "krWXXF",
+                                                "rules": Array [
+                                                  "position:absolute;right:4px;width:15px;top:5px;z-index:1;",
+                                                ],
+                                              },
+                                              "displayName": "ThemeToggle__Sun",
+                                              "foldedComponentIds": Array [],
+                                              "render": [Function],
+                                              "styledComponentId": "ThemeToggle__Sun-sc-1v194oo-2",
+                                              "target": "img",
+                                              "toString": [Function],
+                                              "usesTheme": false,
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
+                                            }
+                                          }
+                                          forwardedRef={null}
+                                          src=""
+                                        >
+                                          <img
+                                            alt="sun"
+                                            className="ThemeToggle__Sun-sc-1v194oo-2 krWXXF"
+                                            src=""
+                                          />
+                                        </StyledComponent>
+                                      </ThemeToggle__Sun>
+                                      <ThemeToggle__Moon
+                                        alt="moon"
+                                        src=""
+                                      >
+                                        <StyledComponent
+                                          alt="moon"
+                                          forwardedComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "attrs": Array [],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "ThemeToggle__Moon-sc-1v194oo-3",
+                                                "isStatic": false,
+                                                "lastClassName": "hWlNmo",
+                                                "rules": Array [
+                                                  "position:absolute;left:4px;top:5px;width:15px;z-index:1;",
+                                                ],
+                                              },
+                                              "displayName": "ThemeToggle__Moon",
+                                              "foldedComponentIds": Array [],
+                                              "render": [Function],
+                                              "styledComponentId": "ThemeToggle__Moon-sc-1v194oo-3",
+                                              "target": "img",
+                                              "toString": [Function],
+                                              "usesTheme": false,
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
+                                            }
+                                          }
+                                          forwardedRef={null}
+                                          src=""
+                                        >
+                                          <img
+                                            alt="moon"
+                                            className="ThemeToggle__Moon-sc-1v194oo-3 hWlNmo"
+                                            src=""
+                                          />
+                                        </StyledComponent>
+                                      </ThemeToggle__Moon>
+                                      <ThemeToggle__Slider
+                                        dark={false}
+                                      >
+                                        <StyledComponent
+                                          dark={false}
+                                          forwardedComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "attrs": Array [],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "ThemeToggle__Slider-sc-1v194oo-1",
+                                                "isStatic": false,
+                                                "lastClassName": "ddDbXw",
+                                                "rules": Array [
+                                                  "position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;border-radius:20px;background-color:",
+                                                  [Function],
+                                                  ";transition:.4s;&:before{position:absolute;content:\\"\\";height:18px;width:18px;border-radius:50%;top:3px;left:4px;bottom:4px;background-color:white;transition:.4s;transform:",
+                                                  [Function],
+                                                  ";z-index:2;}",
+                                                ],
+                                              },
+                                              "displayName": "ThemeToggle__Slider",
+                                              "foldedComponentIds": Array [],
+                                              "render": [Function],
+                                              "styledComponentId": "ThemeToggle__Slider-sc-1v194oo-1",
+                                              "target": "span",
+                                              "toString": [Function],
+                                              "usesTheme": false,
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
+                                            }
+                                          }
+                                          forwardedRef={null}
+                                        >
+                                          <span
+                                            className="ThemeToggle__Slider-sc-1v194oo-1 ddDbXw"
+                                          />
+                                        </StyledComponent>
+                                      </ThemeToggle__Slider>
+                                    </div>
+                                  </StyledComponent>
+                                </ThemeToggle__Switch>
+                              </ThemeToggle>
+                            </div>
+                          </StyledComponent>
+                        </Header__Container>
+                      </Header>
+                      <Intro>
+                        <Intro__Container>
+                          <StyledComponent
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "Intro__Container-n2wl2x-0",
+                                  "isStatic": false,
+                                  "lastClassName": "gCFbfp",
+                                  "rules": Array [
+                                    "width:100%;padding-left:25px;display:flex;align-items:flex-start;margin-bottom:125px;@media ",
+                                    "(max-width: 768px)",
+                                    "{margin-bottom:50px;padding-left:0;width:95%;margin-left:auto;margin-right:auto;}",
+                                  ],
+                                },
+                                "displayName": "Intro__Container",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "Intro__Container-n2wl2x-0",
+                                "target": "aside",
+                                "toString": [Function],
+                                "usesTheme": false,
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                          >
+                            <aside
+                              className="Intro__Container-n2wl2x-0 gCFbfp"
+                            >
+                              <Intro__CircleImg
+                                alt="circle image Emiel Van Severen"
+                                src=""
+                              >
+                                <StyledComponent
+                                  alt="circle image Emiel Van Severen"
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "Intro__CircleImg-n2wl2x-1",
+                                        "isStatic": false,
+                                        "lastClassName": "huXkvm",
+                                        "rules": Array [
+                                          "display:inline-block;width:75px;height:75px;border-radius:50%;",
+                                        ],
+                                      },
+                                      "displayName": "Intro__CircleImg",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "Intro__CircleImg-n2wl2x-1",
+                                      "target": "img",
+                                      "toString": [Function],
+                                      "usesTheme": false,
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                  src=""
+                                >
+                                  <img
+                                    alt="circle image Emiel Van Severen"
+                                    className="Intro__CircleImg-n2wl2x-1 huXkvm"
+                                    src=""
+                                  />
+                                </StyledComponent>
+                              </Intro__CircleImg>
+                              <Intro__TextContainer>
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "Intro__TextContainer-n2wl2x-2",
+                                        "isStatic": false,
+                                        "lastClassName": "jhaMeW",
+                                        "rules": Array [
+                                          "margin-left:25px;height:100%;display:inline-flex;justify-content:center;flex-direction:column;h1{font-size:1.2rem;}@media ",
+                                          "(max-width: 576px)",
+                                          "{margin-left:10px;}",
+                                        ],
+                                      },
+                                      "displayName": "Intro__TextContainer",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "Intro__TextContainer-n2wl2x-2",
+                                      "target": "div",
+                                      "toString": [Function],
+                                      "usesTheme": false,
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                >
+                                  <div
+                                    className="Intro__TextContainer-n2wl2x-2 jhaMeW"
+                                  >
+                                    <h1>
+                                      Emiel Van Severen
+                                    </h1>
+                                    <p>
+                                      If you can´t explain it simply, you don´t understand it well enough.
+                                    </p>
+                                    <Link
+                                      internal={false}
+                                      to="https://github.com/emielvanseveren"
+                                    >
+                                      <Link__ExternalLink
+                                        href="https://github.com/emielvanseveren"
+                                        target="_blank"
+                                      >
+                                        <StyledComponent
+                                          forwardedComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "attrs": Array [],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "Link__ExternalLink-y16ojc-1",
+                                                "isStatic": false,
+                                                "lastClassName": "iJsnQe",
+                                                "rules": Array [
+                                                  "text-decoration-line:underline;text-decoration-color:",
+                                                  [Function],
+                                                  ";color:",
+                                                  [Function],
+                                                  ";font-size:110%;@media ",
+                                                  "(max-width: 768px)",
+                                                  "{font-size:90%;}",
+                                                ],
+                                              },
+                                              "displayName": "Link__ExternalLink",
+                                              "foldedComponentIds": Array [],
+                                              "render": [Function],
+                                              "styledComponentId": "Link__ExternalLink-y16ojc-1",
+                                              "target": "a",
+                                              "toString": [Function],
+                                              "usesTheme": false,
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
+                                            }
+                                          }
+                                          forwardedRef={null}
+                                          href="https://github.com/emielvanseveren"
+                                          target="_blank"
+                                        >
+                                          <a
+                                            className="Link__ExternalLink-y16ojc-1 iJsnQe"
+                                            href="https://github.com/emielvanseveren"
+                                            target="_blank"
+                                          >
+                                            github.com/emielvanseveren
+                                          </a>
+                                        </StyledComponent>
+                                      </Link__ExternalLink>
+                                    </Link>
+                                  </div>
+                                </StyledComponent>
+                              </Intro__TextContainer>
+                            </aside>
+                          </StyledComponent>
+                        </Intro__Container>
+                      </Intro>
+                      <Loader>
+                        <Loader__StyledLoader
+                          alt="loader-icon"
+                          src=""
+                        >
+                          <StyledComponent
+                            alt="loader-icon"
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "Loader__StyledLoader-zhuebl-0",
+                                  "isStatic": false,
+                                  "lastClassName": "fCYwfM",
+                                  "rules": Array [
+                                    "width:30px;height:auto;display:block;margin-left:auto;margin-right:auto;",
+                                  ],
+                                },
+                                "displayName": "Loader__StyledLoader",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "Loader__StyledLoader-zhuebl-0",
+                                "target": "img",
+                                "toString": [Function],
+                                "usesTheme": false,
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            src=""
+                          >
+                            <img
+                              alt="loader-icon"
+                              className="Loader__StyledLoader-zhuebl-0 fCYwfM"
+                              src=""
+                            />
+                          </StyledComponent>
+                        </Loader__StyledLoader>
+                      </Loader>
+                      <Footer>
+                        <Footer__Container>
+                          <StyledComponent
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "Footer__Container-sc-1apcbij-0",
+                                  "isStatic": false,
+                                  "lastClassName": "fPXJHg",
+                                  "rules": Array [
+                                    "display:flex;position:absolute;align-items:center;bottom:0;height:50px;width:100%;margin-top:50px;a{margin-left:8px;margin-right:8px;font-size:90%;}@media ",
+                                    "(max-width: 576px)",
+                                    "{justify-content:center;}",
+                                  ],
+                                },
+                                "displayName": "Footer__Container",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "Footer__Container-sc-1apcbij-0",
+                                "target": "footer",
+                                "toString": [Function],
+                                "usesTheme": false,
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                          >
+                            <footer
+                              className="Footer__Container-sc-1apcbij-0 fPXJHg"
+                            >
+                              <Link
+                                internal={false}
+                                to="https://www.github.com/emielvanseveren/"
+                              >
+                                <Link__ExternalLink
+                                  href="https://www.github.com/emielvanseveren/"
+                                  target="_blank"
+                                >
+                                  <StyledComponent
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "Link__ExternalLink-y16ojc-1",
+                                          "isStatic": false,
+                                          "lastClassName": "iJsnQe",
+                                          "rules": Array [
+                                            "text-decoration-line:underline;text-decoration-color:",
+                                            [Function],
+                                            ";color:",
+                                            [Function],
+                                            ";font-size:110%;@media ",
+                                            "(max-width: 768px)",
+                                            "{font-size:90%;}",
+                                          ],
+                                        },
+                                        "displayName": "Link__ExternalLink",
+                                        "foldedComponentIds": Array [],
+                                        "render": [Function],
+                                        "styledComponentId": "Link__ExternalLink-y16ojc-1",
+                                        "target": "a",
+                                        "toString": [Function],
+                                        "usesTheme": false,
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                    href="https://www.github.com/emielvanseveren/"
+                                    target="_blank"
+                                  >
+                                    <a
+                                      className="Link__ExternalLink-y16ojc-1 iJsnQe"
+                                      href="https://www.github.com/emielvanseveren/"
+                                      target="_blank"
+                                    >
+                                      github
+                                    </a>
+                                  </StyledComponent>
+                                </Link__ExternalLink>
+                              </Link>
+                              •
+                              <Link
+                                internal={false}
+                                to="https://emielvanseveren.be"
+                              >
+                                <Link__ExternalLink
+                                  href="https://emielvanseveren.be"
+                                  target="_blank"
+                                >
+                                  <StyledComponent
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "Link__ExternalLink-y16ojc-1",
+                                          "isStatic": false,
+                                          "lastClassName": "iJsnQe",
+                                          "rules": Array [
+                                            "text-decoration-line:underline;text-decoration-color:",
+                                            [Function],
+                                            ";color:",
+                                            [Function],
+                                            ";font-size:110%;@media ",
+                                            "(max-width: 768px)",
+                                            "{font-size:90%;}",
+                                          ],
+                                        },
+                                        "displayName": "Link__ExternalLink",
+                                        "foldedComponentIds": Array [],
+                                        "render": [Function],
+                                        "styledComponentId": "Link__ExternalLink-y16ojc-1",
+                                        "target": "a",
+                                        "toString": [Function],
+                                        "usesTheme": false,
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                    href="https://emielvanseveren.be"
+                                    target="_blank"
+                                  >
+                                    <a
+                                      className="Link__ExternalLink-y16ojc-1 iJsnQe"
+                                      href="https://emielvanseveren.be"
+                                      target="_blank"
+                                    >
+                                      portfolio
+                                    </a>
+                                  </StyledComponent>
+                                </Link__ExternalLink>
+                              </Link>
+                              •
+                              <Link
+                                internal={false}
+                                to="https://massief.biz"
+                              >
+                                <Link__ExternalLink
+                                  href="https://massief.biz"
+                                  target="_blank"
+                                >
+                                  <StyledComponent
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "Link__ExternalLink-y16ojc-1",
+                                          "isStatic": false,
+                                          "lastClassName": "iJsnQe",
+                                          "rules": Array [
+                                            "text-decoration-line:underline;text-decoration-color:",
+                                            [Function],
+                                            ";color:",
+                                            [Function],
+                                            ";font-size:110%;@media ",
+                                            "(max-width: 768px)",
+                                            "{font-size:90%;}",
+                                          ],
+                                        },
+                                        "displayName": "Link__ExternalLink",
+                                        "foldedComponentIds": Array [],
+                                        "render": [Function],
+                                        "styledComponentId": "Link__ExternalLink-y16ojc-1",
+                                        "target": "a",
+                                        "toString": [Function],
+                                        "usesTheme": false,
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                    href="https://massief.biz"
+                                    target="_blank"
+                                  >
+                                    <a
+                                      className="Link__ExternalLink-y16ojc-1 iJsnQe"
+                                      href="https://massief.biz"
+                                      target="_blank"
+                                    >
+                                      massief.biz
+                                    </a>
+                                  </StyledComponent>
+                                </Link__ExternalLink>
+                              </Link>
+                            </footer>
+                          </StyledComponent>
+                        </Footer__Container>
+                      </Footer>
+                    </div>
+                  </StyledComponent>
+                </Home__Container>
+              </Home>
+            </Route>
+          </Switch>
+        </Router>
+      </Routing>
+    </ThemeProvider>
+  </ThemeProvider>
+</App>
+`;

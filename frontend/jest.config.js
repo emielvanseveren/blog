@@ -6,7 +6,6 @@ module.exports = {
   bail:           5,
   browser:        false,
   cache:          true,
-  cacheDirectory: './src/utils/test/tmp/jest_rs',
   clearMocks:     false,
   globals:        {
     '__API__': process.env.API
@@ -145,8 +144,8 @@ module.exports = {
   // A map from regular expressions to paths to transformers
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
-  // transformIgnorePatterns: [
-  //   "/node_modules/"
+  //transformIgnorePatterns: [
+  //  "./node_modules/?!(react-syntax-highlighter/dist/esm/styles/hljs/rainbow.js)"
   // ],
 
   // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them

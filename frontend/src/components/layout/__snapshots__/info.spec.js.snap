@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Info/> Snapshot 1`] = `
+<Info
+  date={2019-10-10T00:00:00.000Z}
+  read={5}
+>
+  <Info__Container>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Info__Container-sc-2rdfjf-0",
+            "isStatic": false,
+            "lastClassName": "dBrlcP",
+            "rules": Array [
+              "display:block;font-size:0.7rem;margin-bottom:5px;&.post-info{@media ",
+              "(max-width: 768px)",
+              "{p{padding-left:10px;}}}",
+            ],
+          },
+          "displayName": "Info__Container",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Info__Container-sc-2rdfjf-0",
+          "target": "div",
+          "toString": [Function],
+          "usesTheme": false,
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="Info__Container-sc-2rdfjf-0 dBrlcP"
+      >
+        <p>
+          November 10, 2019
+           • 
+          5
+           min read 
+          🔥🔥
+        </p>
+      </div>
+    </StyledComponent>
+  </Info__Container>
+</Info>
+`;
