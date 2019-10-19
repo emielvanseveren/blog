@@ -6,7 +6,6 @@ module.exports = {
   bail:           5,
   browser:        false,
   cache:          true,
-  cacheDirectory: './src/util/test/tmp/jest_rs',
   clearMocks:     false,
   globals:        {
     '__API__': process.env.API
@@ -55,7 +54,7 @@ module.exports = {
   // A map from regular expressions to module names that allow to stub out resources with a single module
   moduleNameMapper: {
     '\\.(jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': '<rootDir>/src/__mocks__/fileMock.js',
-    '\\.(css|less)$':                                                                          '<rootDir>/src/__mocks__/fileMock.js',
+    '\\.(css|less)$':                                                                          '<rootDir>/src/__mocks__/fileMock.js'
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader

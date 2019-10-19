@@ -7,7 +7,7 @@
     "build": "webpack --env production",
     "cosmos": "cosmos",
     "cosmos:export": "cosmos-export",
-    "lint": "eslint /**/*.js --ignore-path ./.eslintignore --config ./.eslintrc.js",
+    "lint": "eslint *.js --ignore-path ./.eslintignore --config ./.eslintrc.js",
     "lint:css": "stylelint src/**/*.js",
     "lint:fix": "eslint --fix",
     "sort-package-json": "sort-package-json package.json",
