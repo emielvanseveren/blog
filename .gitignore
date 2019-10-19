@@ -4,7 +4,7 @@
 build/Release
 
 # dependency directories
-node_modules/
+**/node_modules/
 jspm_packages/
 
 # Optional cache directories
