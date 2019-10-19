@@ -1,10 +1,10 @@
 import React from 'react'
-import Header from './Footer'
+import Intro from './Intro'
 
-describe('<Header/>', () => {
+describe('<Intro/>', () => {
   it('Snapshot', () => {
     expect(mountWithRouterAndTheme(
-      <Header/>
+      <Intro/>
     )).toMatchSnapshot()
   })
 })

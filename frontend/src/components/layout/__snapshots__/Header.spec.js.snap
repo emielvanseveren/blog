@@ -197,3 +197,201 @@ exports[`<Footer/> Snapshot 1`] = `
   </Footer__Container>
 </Footer>
 `;
+
+exports[`<Header/> Snapshot 1`] = `
+<Footer>
+  <Footer__Container>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Footer__Container-sc-1apcbij-0",
+            "isStatic": false,
+            "lastClassName": "fPXJHg",
+            "rules": Array [
+              "display:flex;position:absolute;align-items:center;bottom:0;height:50px;width:100%;margin-top:50px;a{margin-left:8px;margin-right:8px;font-size:90%;}@media ",
+              "(max-width: 576px)",
+              "{justify-content:center;}",
+            ],
+          },
+          "displayName": "Footer__Container",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Footer__Container-sc-1apcbij-0",
+          "target": "footer",
+          "toString": [Function],
+          "usesTheme": false,
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <footer
+        className="Footer__Container-sc-1apcbij-0 fPXJHg"
+      >
+        <Link
+          internal={false}
+          to="https://www.github.com/emielvanseveren/"
+        >
+          <Link__ExternalLink
+            href="https://www.github.com/emielvanseveren/"
+            target="_blank"
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Link__ExternalLink-y16ojc-1",
+                    "isStatic": false,
+                    "lastClassName": "iJsnQe",
+                    "rules": Array [
+                      "text-decoration-line:underline;text-decoration-color:",
+                      [Function],
+                      ";color:",
+                      [Function],
+                      ";font-size:110%;@media ",
+                      "(max-width: 768px)",
+                      "{font-size:90%;}",
+                    ],
+                  },
+                  "displayName": "Link__ExternalLink",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Link__ExternalLink-y16ojc-1",
+                  "target": "a",
+                  "toString": [Function],
+                  "usesTheme": false,
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              href="https://www.github.com/emielvanseveren/"
+              target="_blank"
+            >
+              <a
+                className="Link__ExternalLink-y16ojc-1 iJsnQe"
+                href="https://www.github.com/emielvanseveren/"
+                target="_blank"
+              >
+                github
+              </a>
+            </StyledComponent>
+          </Link__ExternalLink>
+        </Link>
+        •
+        <Link
+          internal={false}
+          to="https://emielvanseveren.be"
+        >
+          <Link__ExternalLink
+            href="https://emielvanseveren.be"
+            target="_blank"
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Link__ExternalLink-y16ojc-1",
+                    "isStatic": false,
+                    "lastClassName": "iJsnQe",
+                    "rules": Array [
+                      "text-decoration-line:underline;text-decoration-color:",
+                      [Function],
+                      ";color:",
+                      [Function],
+                      ";font-size:110%;@media ",
+                      "(max-width: 768px)",
+                      "{font-size:90%;}",
+                    ],
+                  },
+                  "displayName": "Link__ExternalLink",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Link__ExternalLink-y16ojc-1",
+                  "target": "a",
+                  "toString": [Function],
+                  "usesTheme": false,
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              href="https://emielvanseveren.be"
+              target="_blank"
+            >
+              <a
+                className="Link__ExternalLink-y16ojc-1 iJsnQe"
+                href="https://emielvanseveren.be"
+                target="_blank"
+              >
+                portfolio
+              </a>
+            </StyledComponent>
+          </Link__ExternalLink>
+        </Link>
+        •
+        <Link
+          internal={false}
+          to="https://massief.biz"
+        >
+          <Link__ExternalLink
+            href="https://massief.biz"
+            target="_blank"
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Link__ExternalLink-y16ojc-1",
+                    "isStatic": false,
+                    "lastClassName": "iJsnQe",
+                    "rules": Array [
+                      "text-decoration-line:underline;text-decoration-color:",
+                      [Function],
+                      ";color:",
+                      [Function],
+                      ";font-size:110%;@media ",
+                      "(max-width: 768px)",
+                      "{font-size:90%;}",
+                    ],
+                  },
+                  "displayName": "Link__ExternalLink",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Link__ExternalLink-y16ojc-1",
+                  "target": "a",
+                  "toString": [Function],
+                  "usesTheme": false,
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              href="https://massief.biz"
+              target="_blank"
+            >
+              <a
+                className="Link__ExternalLink-y16ojc-1 iJsnQe"
+                href="https://massief.biz"
+                target="_blank"
+              >
+                massief.biz
+              </a>
+            </StyledComponent>
+          </Link__ExternalLink>
+        </Link>
+      </footer>
+    </StyledComponent>
+  </Footer__Container>
+</Footer>
+`;
