@@ -38,7 +38,7 @@ const Description = styled.p`
   }
 `
 
-export default function Title({ date, description, read, title, postId }){
+export default function Title({ date, description, read, title, postid }){
   return (
     <Container>
       <StyledLink to={{ pathname: '/' + title.replace(/\s+/g, '-').toLowerCase(), state: { postId: postId } }}>{title}</StyledLink>
