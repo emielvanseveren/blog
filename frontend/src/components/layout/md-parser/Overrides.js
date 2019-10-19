@@ -6,8 +6,7 @@ import { Block, Alinea, Strong, Anchor, H2 } from './Mdstyle'
 
 // code styles
 
-import javascriptStyle from 'react-syntax-highlighter/dist/esm/styles/hljs/atelier-cave-dark'
-import yamlStyle from 'react-syntax-highlighter/dist/esm/styles/hljs/atelier-cave-light'
+import style from 'react-syntax-highlighter/dist/esm/styles/hljs/rainbow'
 
 const StyledSyntaxHighlighter = styled(SyntaxHighlighter)`
   border-radius: 5px;
@@ -19,14 +18,14 @@ export default {
     component: StyledSyntaxHighlighter,
       props: {
         language: 'javascript',
-        style: javascriptStyle
+        style
       }
     },
   Yaml: {
     component: StyledSyntaxHighlighter,
       props: {
         language: 'yaml',
-        style: yamlStyle
+        style
       }
     },
   Block: Block,

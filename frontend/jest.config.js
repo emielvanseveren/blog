@@ -145,9 +145,9 @@ module.exports = {
   // A map from regular expressions to paths to transformers
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
-  //transformIgnorePatterns: [
-   //  "<rootDir>/node_modules/react-syntax-highlighter/dist/esm/languages"
-  // ],
+  transformIgnorePatterns: [
+    "./node_modules/?!(react-syntax-highlighter/dist/esm/styles/hljs/rainbow.js)"
+   ],
 
   // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
   // unmockedModulePathPatterns: undefined,
