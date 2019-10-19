@@ -3,12 +3,13 @@
 const highlight = '#f1cbff'
 const highlightLightTheme = '#c0a2cc'
 const white = '#FFFFFF'
+const black = '#000000'
 
 const lightTheme = {
   highlight:       highlightLightTheme,
   background: white,
   title:      highlightLightTheme,
-  text:       '#000000'
+  text:       black
 }
 const darkTheme = {
   highlight:     highlight,
