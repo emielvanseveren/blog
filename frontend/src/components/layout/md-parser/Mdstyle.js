@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import size from '../../../constants/size'
 
 const StyledBlock = styled.div`
   margin-bottom: 40px;
@@ -21,6 +22,10 @@ const StyledH2 = styled.h2`
   font-weight: 700;
   font-size: 1.225rem;
   margin-bottom: 10px;
+
+  @media ${size.sm}{
+    font-size: 1rem;
+  }
 `
 
 export const Block = ({ children }) => <StyledBlock>{children}</StyledBlock>

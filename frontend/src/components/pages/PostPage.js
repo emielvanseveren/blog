@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
+import size from '../../constants/size'
 import history from '../../constants/history'
 import Header from '../layout/Header'
 import Loader from '../layout/Loader'
@@ -9,6 +10,12 @@ const Container = styled.div`
   width: 800px;
   min-height: 100vh;
   margin: 0 auto;
+  @media ${size.sm}{
+    width: 500px;
+  }
+  @media ${size.xs}{
+    width: 350px;
+  }
 `
 
 export default function PostPage(){

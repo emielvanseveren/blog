@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Link from './Link'
+import size from '../../constants/size'
 
 import me from '../../images/me.jpg'
 
@@ -10,12 +11,20 @@ const Container = styled.aside`
   display: flex;
   align-items: flex-start;
   margin-bottom: 125px;
+  @media ${size.sm}{
+    margin-bottom:50px;
+    padding-left: 0;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `
 const CircleImg = styled.img`
   display: inline-block;
   width: 75px;
   height: 75px;
   border-radius: 50%;
+
 `
 const TextContainer = styled.div`
   margin-left: 25px;
@@ -26,6 +35,10 @@ const TextContainer = styled.div`
   h1{
     font-size: 1.2rem;
   }
+  @media ${size.xs}{
+    margin-left: 10px;
+  }
+
 `
 
 export default function Intro(){

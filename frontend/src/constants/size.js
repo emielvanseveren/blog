@@ -1,4 +1,4 @@
-export const size = {
+const size = {
   xl:   '(max-width: 1921px)',
   lg:   '(max-width: 1200px)',
   md:   '(max-width: 992px)',
@@ -6,3 +6,5 @@ export const size = {
   xs:   '(max-width: 576px)',
   xxs:  '(max-width: 450px)'
 }
+
+export default size

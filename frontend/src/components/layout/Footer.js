@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import size from '../../constants/size'
 import Link from './Link'
 
 const Container = styled.footer`
@@ -15,6 +15,9 @@ const Container = styled.footer`
     margin-left: 8px;
     margin-right: 8px;
     font-size: 90%;
+  }
+  @media ${size.xs}{
+    justify-content: center;
   }
 `
 

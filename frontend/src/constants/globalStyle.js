@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
+import size from './size'
 import { createGlobalStyle } from 'styled-components'
 
 const Style = createGlobalStyle`
@@ -13,6 +14,7 @@ const Style = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     transition: 0.4s background-color;
     background-color: ${({ theme }) => theme.background};
+    overflow-x: hidden;
   }
   h1,h2,h3,h4,h5,h6,p,a,button,label,input,div,textarea{
     font-family: 'Poppins', sans-serif;
@@ -29,6 +31,9 @@ const Style = createGlobalStyle`
   }
   p{
     font-size: 1rem;
+    @media ${size.xs}{
+      font-size: 0.9rem;
+    }
   }
   input{
      display: block;
