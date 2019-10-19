@@ -1,4 +1,4 @@
-FROM node:current-alpine
+FROM node
 
 # set working directory
 RUN mkdir -p /usr/src/app
