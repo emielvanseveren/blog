@@ -6,7 +6,7 @@ module.exports = {
   bail:           5,
   browser:        false,
   cache:          true,
-  cacheDirectory: './src/utils/test/tmp/jest_rs',
+  cacheDirectory: './src/util/test/tmp/jest_rs',
   clearMocks:     false,
   globals:        {
     '__API__': process.env.API
