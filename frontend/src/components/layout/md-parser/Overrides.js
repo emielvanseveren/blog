@@ -5,8 +5,7 @@ import SyntaxHighlighter from 'react-syntax-highlighter'
 import { Block, Alinea, Strong, Anchor, H2 } from './Mdstyle'
 
 // code styles
-
-import style from 'react-syntax-highlighter/dist/esm/styles/hljs/rainbow'
+import style from './codeStyle'
 
 const StyledSyntaxHighlighter = styled(SyntaxHighlighter)`
   border-radius: 5px;

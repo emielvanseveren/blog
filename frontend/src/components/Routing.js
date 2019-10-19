@@ -7,7 +7,7 @@ export default function Routing({ history }){
     <Router history={history}>
       <Switch>
         {
-          routes.map(({ path, component, exact = false }) => (<Route component={component} exact={exact} key={path} path={path}/>)
+          routes.map(({ path, component, exact = false}) => (<Route component={component} exact={exact} key={'route-' + path} path={path}/>)
           )
         }
       </Switch>
