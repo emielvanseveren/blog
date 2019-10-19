@@ -1,0 +1,28 @@
+{
+  "watchDirs": ["src"],
+  "staticPath": "./src/images",
+  "webpack": {
+    "configPath": "./webpack.config.js",
+    "hotReload": true
+  },
+  "hostname": "aether.catalysm.net",
+  "port": 30002,
+  "ui":{
+    "responsivePreview": {
+      "devices": [{
+          "label": "1080p",
+          "width": 1920,
+          "height": 1080
+      },{
+          "label": "Large",
+          "width": 1440,
+          "height": 900
+      },
+      {
+        "label":  "Medium",
+        "width":  1024,
+        "height": "768"
+      }]
+    }
+  }
+}
