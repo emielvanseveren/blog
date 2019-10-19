@@ -98,14 +98,13 @@ exports.minify = () => ({
         terserOptions:  {
           warnings: false,
           ecma:         8,
-          warnings:     true,
           output:       {
             comments: false
           },
           extractComments: false,
-          ie8:          false,
-          compress:     {},
-          mangle:       true
+          ie8:             false,
+          compress:        {},
+          mangle:          true
         }
       }),
       new OptimizeCSSAssetsPlugin({})
