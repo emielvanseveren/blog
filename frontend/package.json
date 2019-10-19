@@ -2,6 +2,7 @@
   "name": "blog",
   "version": "1.0.0",
   "private": true,
+  "main": "index.js",
   "scripts": {
     "build": "webpack --env production",
     "cosmos": "cosmos",
@@ -12,7 +13,6 @@
     "sort-package-json": "sort-package-json package.json",
     "start": "webpack-dev-server --env development"
   },
-  "main": "index.js",
   "dependencies": {
     "markdown-to-jsx": "^6.10.3",
     "react": "^16.10.2",
