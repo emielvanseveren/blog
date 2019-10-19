@@ -1,5 +1,5 @@
 import React from 'react'
-import mountWithRouter from './src/utils/test/mountWithRouter'
+import mountWithRouter from './mountWithRouter'
 import { configure, mount } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 
