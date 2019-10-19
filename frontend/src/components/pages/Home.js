@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import uuid from 'uuid/v4'
+import size from '../../constants/size'
 
 import Header from '../layout/Header'
 import Footer from '../layout/Footer'
@@ -13,6 +14,13 @@ const Container = styled.div`
   width: 800px;
   min-height: 100vh;
   margin: 0 auto;
+
+  @media ${size.sm}{
+    width: 500px;
+  }
+  @media ${size.xs}{
+    width: 350px;
+  }
 `
 
 export default function Home(){
