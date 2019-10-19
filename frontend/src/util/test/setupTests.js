@@ -1,7 +1,7 @@
 import React from 'react'
-import mountWithRouter from './mountWithRouter'
 import { configure, mount } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
+import mountWithRouterAndTheme from './mountWithRouterAndTheme'
 
 configure({
   adapter:                 new Adapter(),
@@ -10,4 +10,4 @@ configure({
 
 global.React = React
 global.mount = mount
-global.mountWithRouter = mountWithRouter
+global.mountWithRouterAndTheme = mountWithRouterAndTheme
