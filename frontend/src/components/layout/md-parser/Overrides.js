@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 // components
-import SyntaxHighlighter from 'react-syntax-highlighter/dist/esm/prism-async'
+import SyntaxHighlighter from 'react-syntax-highlighter'
 import { Block, Alinea, Strong, Anchor, H2 } from './Mdstyle'
 
 // code styles
