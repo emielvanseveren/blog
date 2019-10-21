@@ -11,9 +11,9 @@
   "author": "Emiel Van Severen",
   "dependencies": {
     "@hapi/joi": "^16.1.7",
-    "@nestjs/common": "^6.8.2",
+    "@nestjs/common": "^6.8.3",
     "@nestjs/core": "^6.8.3",
-    "@nestjs/platform-express": "^6.8.2",
+    "@nestjs/platform-express": "^6.8.3",
     "@nestjs/serve-static": "^1.0.1",
     "@nestjs/typeorm": "^6.2.0",
     "dotenv": "^8.2.0",
@@ -21,10 +21,10 @@
     "pg": "^7.12.1",
     "rimraf": "^3.0.0",
     "rxjs": "^6.5.3",
-    "typeorm": "^0.2.19"
+    "typeorm": "^0.2.20"
   },
   "devDependencies": {
-    "@nestjs/testing": "^6.8.2",
+    "@nestjs/testing": "^6.8.3",
     "@types/dotenv": "^6.1.1",
     "@types/express": "^4.17.1",
     "@types/hapi__joi": "^16.0.1",
