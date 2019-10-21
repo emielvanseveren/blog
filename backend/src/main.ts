@@ -5,10 +5,9 @@ import { Logger } from '@nestjs/common'
 
 const logger = new Logger('bootstrap')
 
-async function bootstrap(){
+async function bootstrap() {
   dotenv.config()
   const app = await NestFactory.create(AppModule, { cors: true })
-
 
   await app.listen(process.env.PORT)
   logger.log(`Application listening on port ${process.env.PORT}`);
@@ -18,11 +17,5 @@ async function bootstrap(){
     throw e
   })
 
-  app.use((req, res, next) => {
-    // res.setHeader("Access-Control-Allow-Origin", "aether.catalysm.net")
-    // res.setHeader("Access-Control-Allow-Credentials", "true")
-  })
-
-
 }
- bootstrap()
+bootstrap()

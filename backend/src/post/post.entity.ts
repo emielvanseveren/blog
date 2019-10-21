@@ -1,6 +1,4 @@
 import { Entity, Column, BaseEntity, Unique, PrimaryGeneratedColumn } from 'typeorm'
-
-
 @Entity()
 @Unique(['postId'])
 export default class Post extends BaseEntity {

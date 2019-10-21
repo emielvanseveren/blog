@@ -1,7 +1,5 @@
 import { Controller, Get } from '@nestjs/common'
 import { AppService } from './app.service'
-
-
 // equal to '/' path, this could also contain a subroute like /user
 @Controller()
 export class AppController {
