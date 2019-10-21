@@ -13,6 +13,10 @@ const MarkDown = styled(Markdown)`
   @media ${size.sm}{
     font-size: 0.8rem;
   }
+  a{
+    color: ${({ theme }) => theme.highlight};
+    text-decoration: ${({ theme }) => theme.highlight} underline
+  }
 `
 
 export default function MdParser({ md }){

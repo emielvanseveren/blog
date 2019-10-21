@@ -13,10 +13,6 @@ const StyledStrong = styled.strong`
   font-weight: 700;
   color: ${({ theme }) => theme.highlight};
 `
-const StyledAnchor = styled.a`
-  color: ${({ theme }) => theme.highlight};
-  text-decoration: ${({ theme }) => theme.highlight} underline;
-`
 const StyledH2 = styled.h2`
   color: ${({ theme }) => theme.text};
   font-weight: 700;
@@ -34,6 +30,6 @@ export const Alinea = ({ children }) => <StyledAlinea>{ children }</StyledAlinea
 
 export const Strong = ({ children }) => <StyledStrong>{children}</StyledStrong>
 
-export const Anchor = ({href, children}) => <StyledAnchor href={href}target="_blank">{children}</StyledAnchor>
+export const Anchor = ({href, children}) => <StyledAnchor href={href} target="_blank">{children}</StyledAnchor>
 
 export const H2 = ({ children }) => <StyledH2>{children}</StyledH2>
