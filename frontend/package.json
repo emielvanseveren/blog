@@ -62,7 +62,7 @@
     "react-cosmos-router-proxy": "4.8.2",
     "react-cosmos-stateful-proxy": "2.0.0",
     "react-hot-loader": "4.12.14",
-    "react-test-renderer": "16.10.2",
+    "react-test-renderer": "16.11.0",
     "sass-loader": "^8.0.0",
     "sort-package-json": "1.22.1",
     "stylelint": "^11.1.1",
