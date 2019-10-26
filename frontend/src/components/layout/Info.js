@@ -28,8 +28,10 @@ export default function Info({ className, date, read }){
         return '🔥'
       case 4: case 5: case 6:
         return '🔥🔥'
-      case read > 6:
+      case (read > 7 && read < 20):
         return '🔥🔥🔥'
+      case (read >= 20):
+        return '🔥🔥🔥🔥'
     }
   }
   return (
