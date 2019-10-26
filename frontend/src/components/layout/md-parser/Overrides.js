@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 // components
-import SyntaxHighlighter from 'react-syntax-highlighter'
+import { LightAsync as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { Block, Alinea, Strong, H2 } from './Mdstyle'
 
 // code styles
@@ -12,26 +12,32 @@ const StyledSyntaxHighlighter = styled(SyntaxHighlighter)`
   padding: 15px!important;
 `
 
+const defaultProps = {
+  style: style,
+  showLineNumbers: true,
+}
+
+
 export default {
   Js: {
     component: StyledSyntaxHighlighter,
     props: {
       language: 'javascript',
-      style
+      ...defaultProps
     }
   },
   Yaml: {
     component: StyledSyntaxHighlighter,
     props: {
       language: 'yaml',
-      style
+      ...defaultProps
     }
   },
   Bash: {
     component: StyledSyntaxHighlighter,
     props: {
       language: 'bash',
-      style
+      ...defaultProps
     }
   },
   Block: Block,

@@ -20,7 +20,7 @@ const Container = styled.div`
 export default function Info({ className, date, read }){
   function parseDate(date){
     const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'October', 'November', 'December']
-    return `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`
+    return `${monthNames[(date.getMonth()-1)]} ${date.getDate()}, ${date.getFullYear()}`
   }
   function readLengthEmoji(read){
     switch (read){
