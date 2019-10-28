@@ -10122,10 +10122,10 @@ react-cosmos-stateful-proxy@2.0.0:
   dependencies:
     merge "^1.2.1"
 
-react-cosmos@5.0.0-beta.15:
-  version "5.0.0-beta.15"
-  resolved "https://registry.yarnpkg.com/react-cosmos/-/react-cosmos-5.0.0-beta.15.tgz#e254d32afb5a33085d7ae40773a59aa3af753183"
-  integrity sha512-eW2+AlfV1My/RXlGPU7vnUC57qpJPuBbG8t68NMf63qQzz4RszWA9mCjSizK4nzPt33s4dsrSSMDnms6nXnbPw==
+react-cosmos@5.0.0-beta.16:
+  version "5.0.0-beta.16"
+  resolved "https://registry.yarnpkg.com/react-cosmos/-/react-cosmos-5.0.0-beta.16.tgz#7e6008b3dbbc11fa863597431f5dd943d26c5a3d"
+  integrity sha512-i4DDipe+RUmt42eY9BuAsCbXeHd5poiNX6OYguOX/z658H0Yeig90OopWRPzDO+arNooQLCom1ZGLcPTeO68xA==
   dependencies:
     "@skidding/launch-editor" "^2.2.3"
     "@skidding/webpack-hot-middleware" "^2.25.0"
