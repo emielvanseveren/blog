@@ -61,7 +61,7 @@
     "react-cosmos": "5.0.0-beta.15",
     "react-cosmos-router-proxy": "4.8.2",
     "react-cosmos-stateful-proxy": "2.0.0",
-    "react-hot-loader": "4.12.15",
+    "react-hot-loader": "4.12.16",
     "react-test-renderer": "16.11.0",
     "sass-loader": "^8.0.0",
     "sort-package-json": "1.22.1",
