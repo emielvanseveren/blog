@@ -5,9 +5,7 @@ import Link from './Link'
 
 const Container = styled.footer`
   display: flex;
-  position: absolute;
   align-items: center;
-  bottom: 0;
   height: 50px;
   width: 100%;
   margin-top: 50px;
