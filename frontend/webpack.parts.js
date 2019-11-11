@@ -41,20 +41,11 @@ exports.devServer = ({ host, port } = {}) => ({
     proxy: [
       {
         context: ['/post'],
-        target: 'http://aether.catalysm.net:30201'
+        target: process.env.API
       }
     ]
   }
 })
-
-exports.globalVariables = () => ({
-  plugins: [
-    new webpack.DefinePlugin({
-      __API__: JSON.stringify(process.env.API)
-    })
-  ]
-})
-
 exports.generateFavicon = () => ({
   plugins: [
     new FaviconsWebpackPlugin({
