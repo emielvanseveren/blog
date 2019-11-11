@@ -7,7 +7,6 @@ const commonConfig = merge([
   parts.IO(),
   parts.loadHtml(),
   parts.cssExtract(),
-  parts.globalVariables()
 ])
 
 const productionConfig = merge([

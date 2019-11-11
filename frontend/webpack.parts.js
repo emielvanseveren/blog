@@ -37,18 +37,15 @@ exports.devServer = ({ host, port } = {}) => ({
     overlay:            true,
     compress:           true,
     historyApiFallback: true, // path changes react router dom.,
-    after:              () => console.log('Development server has been started.')
+    after:              () => console.log('Development server has been started.'),
+    proxy: [
+      {
+        context: ['/post'],
+        target: process.env.API
+      }
+    ]
   }
 })
-
-exports.globalVariables = () => ({
-  plugins: [
-    new webpack.DefinePlugin({
-      __API__: JSON.stringify(process.env.API)
-    })
-  ]
-})
-
 exports.generateFavicon = () => ({
   plugins: [
     new FaviconsWebpackPlugin({

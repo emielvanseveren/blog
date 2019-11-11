@@ -39,9 +39,15 @@ const Description = styled.p`
 `
 
 export default function Title({ date, description, read, title, postId }){
+
+  //put postId in localstorage
+  function setPostId(){
+    localStorage.setItem('post', JSON.stringify({ postId }))
+  }
+
   return (
     <Container>
-      <StyledLink to={{ pathname: '/' + title.replace(/\s+/g, '-').toLowerCase(), state: { postId: postId } }}>{title}</StyledLink>
+      <StyledLink to={{ pathname: '/' + title.replace(/\s+/g, '-').toLowerCase()}} onClick={setPostId} onContextMenu={setPostId}>{title}</StyledLink>
       <Info date={date} read={read}/>
       <Description>{description}</Description>
     </Container>

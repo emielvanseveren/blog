@@ -27,8 +27,7 @@ export default function Home(){
   const [titles, setTitles] = useState({ data: null, loading: true})
 
   async function fetchData(){
-    const res = await fetch(`http://aether.catalysm.net:30201/post/titles`, { method: 'GET' })
-    console.log(res)
+    const res = await fetch(`/post/titles`, { method: 'GET' })
     const data = await res.json()
     setTitles({data: data, loading: false })
   }
