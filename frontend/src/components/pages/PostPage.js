@@ -26,7 +26,8 @@ export default function PostPage(){
   }, [])
 
   async function fetchData(){
-    const res = await fetch(`/post/${history.location.state.postId}`, { method: 'GET' })
+    const {postId} = await JSON.parse(localStorage.getItem('post'))
+    const res = await fetch(`http://aether.catalysm.net:30201/post/${postId}`, { method: 'GET' })
     const data = await res.json()
     setPostData({ ...data, loading: false })
   }
