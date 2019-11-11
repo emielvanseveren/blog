@@ -37,7 +37,13 @@ exports.devServer = ({ host, port } = {}) => ({
     overlay:            true,
     compress:           true,
     historyApiFallback: true, // path changes react router dom.,
-    after:              () => console.log('Development server has been started.')
+    after:              () => console.log('Development server has been started.'),
+    proxy: [
+      {
+        context: ['/post'],
+        target: 'http://aether.catalysm.net:30201'
+      }
+    ]
   }
 })
 
