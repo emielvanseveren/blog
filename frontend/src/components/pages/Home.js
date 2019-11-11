@@ -28,7 +28,6 @@ export default function Home(){
 
   async function fetchData(){
     const res = await fetch(`/post/titles`, { method: 'GET' })
-    console.log(res)
     const data = await res.json()
     setTitles({data: data, loading: false })
   }
