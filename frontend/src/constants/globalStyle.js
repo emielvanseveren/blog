@@ -2,10 +2,11 @@ import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import size from './size'
 import { createGlobalStyle } from 'styled-components'
+import { darken } from 'polished'
 
 const Style = createGlobalStyle`
   *::selection{
-    background-color: black;
+    background-color: ${({ theme }) => darken(0.2, theme.background)};
     color: white;
   }
   body{
