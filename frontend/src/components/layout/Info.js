@@ -23,15 +23,17 @@ export default function Info({ className, date, read }){
     return `${monthNames[(date.getMonth()-1)]} ${date.getDate()}, ${date.getFullYear()}`
   }
   function readLengthEmoji(read){
-    switch (read){
-      case 1: case 2: case 3:
+    switch (true){
+      case (read < 5):
         return '🔥'
-      case 4: case 5: case 6:
+      case (read <= 10):
         return '🔥🔥'
-      case (read > 7 && read < 20):
+      case (read <= 15):
         return '🔥🔥🔥'
-      case (read >= 20):
+      case (read <= 20):
         return '🔥🔥🔥🔥'
+      default:
+        return '🔥🔥🔥🔥🔥'
     }
   }
   return (
