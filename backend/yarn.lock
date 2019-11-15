@@ -76,10 +76,10 @@
     object-hash "2.0.0"
     uuid "3.3.3"
 
-"@nestjs/platform-express@^6.8.4":
-  version "6.8.4"
-  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-6.8.4.tgz#8cabbe12abe587702d1bfd6aa8c95327d96abbb5"
-  integrity sha512-xMCr2mXoFxqrOj0YKu+TecWpABTLbxHYLLOnfI+UN66t943LGlOrWs8s51jlwx/vKgcJG/KDCGdR1hddNN1Cog==
+"@nestjs/platform-express@^6.10.1":
+  version "6.10.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-6.10.1.tgz#12cfa39e0651048ac7f526c2f1b0f73171af8acb"
+  integrity sha512-Tm5jRoPKhWj2VloM9fGkgR9S/yLQnDDfgPE9dvJX89hVQHS8RA7ub9kKfXF1iJjV+nAjk4XpPj8yGoUpYrC31g==
   dependencies:
     body-parser "1.19.0"
     cors "2.8.5"
