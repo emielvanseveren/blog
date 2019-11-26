@@ -56,10 +56,10 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@nestjs/common@^6.8.4":
-  version "6.8.4"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-6.8.4.tgz#1aac37f154462fc833e1411883a61121fb9b8ab2"
-  integrity sha512-4adKpi4bpiR2sqRYPgTp7oy63mQJGA/hAc2gxzJRA2vKQrLD60GC22e6lJgaEL+Ls32QutTLDWq5NMN/+UmaFA==
+"@nestjs/common@^6.10.2":
+  version "6.10.2"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-6.10.2.tgz#629329bb36dde8e9d9820de36df0b16257a1f7e0"
+  integrity sha512-v1FaympATrYiymi1PVmOBJcXUo8iFb+cdb0kMsvHW2Bzf99SMeRQFOAa3pb+xylxGxJMtePY0JaFzmhQaXPI8Q==
   dependencies:
     axios "0.19.0"
     cli-color "2.0.0"
