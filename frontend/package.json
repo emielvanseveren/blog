@@ -11,7 +11,7 @@
     "lint:css": "stylelint src/**/*.js",
     "lint:fix": "eslint --fix",
     "sort": "sort-package-json package.json",
-    "start": "webpack-dev-server --env development",
+    "start:dev": "webpack-dev-server --env development",
     "test": "jest --config ./jest.config.js",
     "test:watch": "jest --watchAll"
   },
