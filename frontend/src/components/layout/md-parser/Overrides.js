@@ -17,7 +17,6 @@ const defaultProps = {
   showLineNumbers: true,
 }
 
-
 export default {
   Js: {
     component: StyledSyntaxHighlighter,
@@ -37,6 +36,13 @@ export default {
     component: StyledSyntaxHighlighter,
     props: {
       language: 'bash',
+      ...defaultProps
+    }
+  },
+  C: {
+    component: StyledSyntaxHighlighter,
+    props: {
+      language: 'c',
       ...defaultProps
     }
   },
