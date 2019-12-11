@@ -27,7 +27,7 @@ export default function Home(){
   const [titles, setTitles] = useState({ data: null, loading: true})
 
   async function fetchData(){
-    const res = await fetch(`/post/titles`, { method: 'GET' })
+    const res = await fetch(`http://metis.catalysm.net:20001/post/titles`, { method: 'GET' })
     const data = await res.json()
     setTitles({data: data, loading: false })
   }
@@ -38,7 +38,7 @@ export default function Home(){
 
   function showTitles(){
     if (!titles.loading){
-      return (titles.data.map(({ date, description, postId, read, title }) => <Title date={new Date(date)} description={description} key={uuid()} postId={postId} read={read} title={title}/>))
+      return (titles.data.map(({ date, description, read, title }) => <Title date={new Date(date)} description={description} key={uuid()} read={read} title={title}/>))
     } else {
       return <Loader/>
     }
