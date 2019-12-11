@@ -11,12 +11,10 @@ const StyledSyntaxHighlighter = styled(SyntaxHighlighter)`
   border-radius: 5px;
   padding: 15px!important;
 `
-
 const defaultProps = {
   style: style,
   showLineNumbers: true,
 }
-
 export default {
   Js: {
     component: StyledSyntaxHighlighter,

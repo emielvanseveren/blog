@@ -1,6 +1,5 @@
 const webpack = require('webpack')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const ManifestPlugin = require('webpack-manifest-plugin')
@@ -46,20 +45,6 @@ exports.devServer = ({ host, port } = {}) => ({
     ]
   }
 })
-exports.generateFavicon = () => ({
-  plugins: [
-    new FaviconsWebpackPlugin({
-      logo:           './src/images/icon.svg',
-      statsFilename:  'faviconStats-[hash].json',
-      inject:         true,
-      title:          'Blog',
-      caches:         true,
-      prefix:         '/assets/icons/',
-      outputPath:     '/assets/icons/'
-    })
-  ]
-})
-
 exports.cleanDist = () => ({
   plugins: [
     new CleanWebpackPlugin({

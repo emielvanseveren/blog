@@ -13,7 +13,6 @@ const productionConfig = merge([
   parts.loaders({ filename: '[contenthash].[ext]' }),
   parts.cleanDist(),
   parts.manifest(),
-  parts.generateFavicon(),
   parts.minify(),
   parts.minimizeImages()
 ])
