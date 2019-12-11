@@ -11,13 +11,10 @@ const StyledSyntaxHighlighter = styled(SyntaxHighlighter)`
   border-radius: 5px;
   padding: 15px!important;
 `
-
 const defaultProps = {
   style: style,
   showLineNumbers: true,
 }
-
-
 export default {
   Js: {
     component: StyledSyntaxHighlighter,
@@ -37,6 +34,13 @@ export default {
     component: StyledSyntaxHighlighter,
     props: {
       language: 'bash',
+      ...defaultProps
+    }
+  },
+  C: {
+    component: StyledSyntaxHighlighter,
+    props: {
+      language: 'c',
       ...defaultProps
     }
   },
