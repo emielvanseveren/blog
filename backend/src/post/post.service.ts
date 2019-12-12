@@ -11,18 +11,10 @@ export class PostService {
     @InjectRepository(PostRepository)
     private PostRepository: PostRepository) {}
 
-    async getBlogPost( id: number): Promise<Post> {
-      const found = await this.PostRepository.getBlogPost(id)
+    async getBlogPost( title: string): Promise<Post> {
+      const found = await this.PostRepository.getBlogPost(title)
       if (!found) {
-        throw new NotFoundException(`Blog post with ID "${id}" not found.`)
-      }
-      return found
-    }
-
-    async getTitle(id: number): Promise<Post> {
-      const found = await this.PostRepository.getTitle(id)
-      if (!found) {
-        throw new NotFoundException('There was no title found for given id.')
+        throw new NotFoundException(`Blog post with title "${title.split('-').join(' ')}" not found.`)
       }
       return found
     }
