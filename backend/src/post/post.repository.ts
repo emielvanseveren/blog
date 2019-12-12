@@ -4,24 +4,14 @@ import Post from './post.entity'
 @EntityRepository(Post)
 export class PostRepository extends Repository<Post> {
 
-  async getBlogPost(id: number ): Promise<Post> {
-    const Post = await this.findOne({
-      where:  { postId: id },
-    })
+  async getBlogPost(title: string ): Promise<Post> {
+    const search = title.split('-').join(" ")
+    const Post = await this.createQueryBuilder("post").where('LOWER(title) = LOWER(:title)', { title: search }).getOne()
     return Post
   }
-
-  async getTitle(id: number): Promise<Post> {
-    const title = await this.findOne({
-      select: ['title'],
-      where: { postId: id },
-    })
-    return title
-  }
-
   async getTitles(): Promise<Post[]> {
     const titles = await this.find({
-      select: [ 'postId', 'title', 'description', 'date', 'read'],
+      select: [ 'title', 'description', 'date', 'read'],
       take: 50,
       order: { date: 'DESC'},
     })

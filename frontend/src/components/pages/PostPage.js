@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useParams } from 'react-router'
 import styled from 'styled-components'
 import size from '../../constants/size'
 import history from '../../constants/history'
@@ -20,14 +21,14 @@ const Container = styled.div`
 
 export default function PostPage(){
   const [ postData, setPostData] = useState({ date: undefined, description: undefined, postid: undefined, read: undefined, title: undefined, body: undefined, loading: true })
+  let { title } = useParams()
 
   useEffect(() => {
     fetchData()
   }, [])
 
   async function fetchData(){
-    const {postId} = await JSON.parse(localStorage.getItem('post'))
-    const res = await fetch(`/post/${postId}`, { method: 'GET' })
+    const res = await fetch(`/post/${title}`, { method: 'GET' })
     const data = await res.json()
     setPostData({ ...data, loading: false })
   }

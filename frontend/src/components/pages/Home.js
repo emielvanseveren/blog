@@ -38,7 +38,7 @@ export default function Home(){
 
   function showTitles(){
     if (!titles.loading){
-      return (titles.data.map(({ date, description, postId, read, title }) => <Title date={new Date(date)} description={description} key={uuid()} postId={postId} read={read} title={title}/>))
+      return (titles.data.map(({ date, description, read, title }) => <Title date={new Date(date)} description={description} key={uuid()} read={read} title={title}/>))
     } else {
       return <Loader/>
     }

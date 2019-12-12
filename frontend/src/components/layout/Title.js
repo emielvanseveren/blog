@@ -38,16 +38,10 @@ const Description = styled.p`
   }
 `
 
-export default function Title({ date, description, read, title, postId }){
-
-  //put postId in localstorage
-  function setPostId(){
-    localStorage.setItem('post', JSON.stringify({ postId }))
-  }
-
+export default function Title({ date, description, read, title }){
   return (
     <Container>
-      <StyledLink to={{ pathname: '/' + title.replace(/\s+/g, '-').toLowerCase()}} onClick={setPostId} onContextMenu={setPostId}>{title}</StyledLink>
+      <StyledLink to={{ pathname: '/' + title.replace(/\s+/g, '-').toLowerCase()}}>{title}</StyledLink>
       <Info date={date} read={read}/>
       <Description>{description}</Description>
     </Container>
@@ -56,7 +50,6 @@ export default function Title({ date, description, read, title, postId }){
 Title.propTypes = {
   date:         PropTypes.instanceOf(Date),
   description:  PropTypes.string.isRequired,
-  postId:       PropTypes.number.isRequired,
   read:         PropTypes.number.isRequired,
   title:        PropTypes.string.isRequired
 }
