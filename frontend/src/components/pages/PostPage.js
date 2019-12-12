@@ -28,7 +28,7 @@ export default function PostPage(){
   }, [])
 
   async function fetchData(){
-    const res = await fetch(`http://metis.catalysm.net:20001/post/${title}`, { method: 'GET' })
+    const res = await fetch(`/post/${title}`, { method: 'GET' })
     const data = await res.json()
     setPostData({ ...data, loading: false })
   }
