@@ -48,7 +48,7 @@ export default function Intro(){
       <TextContainer>
         <h1>Emiel Van Severen</h1>
         <p>If you can´t explain it simply, you don´t understand it well enough.</p>
-        <Link internal={false} to="https://github.com/emielvanseveren">github.com/emielvanseveren</Link>
+        <Link internal={false} to="https://emielvanseveren.be">Personal website - emielvanseveren.be</Link>
       </TextContainer>
     </Container>
   )
