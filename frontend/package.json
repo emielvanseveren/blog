@@ -52,7 +52,7 @@
     "imagemin-webpack-plugin": "^2.4.2",
     "jest": "24.9.0",
     "jest-environment-jsdom": "24.9.0",
-    "jest-enzyme": "7.1.1",
+    "jest-enzyme": "7.1.2",
     "mini-css-extract-plugin": "0.8.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "polished": "^3.4.1",
