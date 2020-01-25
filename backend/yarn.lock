@@ -153,10 +153,10 @@
     "@types/express-serve-static-core" "*"
     "@types/serve-static" "*"
 
-"@types/hapi__joi@^16.0.2":
-  version "16.0.2"
-  resolved "https://registry.yarnpkg.com/@types/hapi__joi/-/hapi__joi-16.0.2.tgz#28dbc647c4fcf736403ad21c30668e3ecf4c19de"
-  integrity sha512-mBJ70SvfnlmeVNRiq34M0FwZ0xkFwwLN2eQkneT2DStDITKiWEV4ycE2Muq0PavBj+pc8wVtxpJwAR+YAMIplg==
+"@types/hapi__joi@^16.0.8":
+  version "16.0.8"
+  resolved "https://registry.yarnpkg.com/@types/hapi__joi/-/hapi__joi-16.0.8.tgz#c187b8431c643cfb7691d600ecccc10fa137d26e"
+  integrity sha512-13I2m/eIoKF8JwLkeibJjsu2EKui18Vug7cOtzuUbWtF7mHyBgFCzSxnthHQ77z9S3T68ZldsGZpK1qXbinQjw==
 
 "@types/json5@^0.0.29":
   version "0.0.29"
