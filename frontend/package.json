@@ -57,7 +57,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "polished": "^3.4.1",
     "prop-types": "15.7.2",
-    "react-cosmos": "5.0.0-beta.15",
+    "react-cosmos": "5.5.0",
     "react-cosmos-router-proxy": "4.8.2",
     "react-cosmos-stateful-proxy": "2.0.0",
     "react-hot-loader": "4.12.15",
